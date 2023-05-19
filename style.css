@@ -973,12 +973,6 @@ font-size: 14px;
 .services .swiper-slide {
   opacity: .3;
 }
-
-@media (max-width: 786px) {
-  swiper-container{
-    
-  }
-}
   
 @media (max-width: 1199px) {
   .services .swiper-slide-active {
