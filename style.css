@@ -907,17 +907,13 @@ font-size: 14px;
 
 
 /* Testimonial */
-/* 
+
 .Testimonials swiper-container swiper-slide .test-box:hover{
   background-color: rgba(245, 247, 253, 0.895);
   transform: scale(1.02);
   transform:all .3s ease;
 }
-.Testimonials swiper-container swiper-slide .test-box{
-  border-radius: 15px; 
-  box-shadow: 3px 18px 25px rgba(142, 154, 222, 0.686) ;
-   width: 500px;
-}
+
 .Testimonials swiper-container swiper-slide .test-box p{
   font-family:Poppins;
 }
@@ -937,7 +933,18 @@ font-size: 14px;
 .Testimonials swiper-container swiper-slide .test-box .sep i{
   font-size: 60px; 
   color: rgba(187, 204, 238, 0.422); 
-} */
+}
+
+@media (max-wdth:768px) {
+  .Testimonials swiper-container swiper-slide .test-box{
+     width: 350px;
+     height: auto;
+  }
+  .team swiper-container swiper-slide .test-box{
+    width: 350px;
+    height: auto;
+  }
+}
 
 /*--------------------------------------------------------------
 # Services
