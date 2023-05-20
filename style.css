@@ -907,7 +907,7 @@ font-size: 14px;
 
 
 /* Testimonial */
-
+/* 
 .Testimonials swiper-container swiper-slide .test-box:hover{
   background-color: rgba(245, 247, 253, 0.895);
   transform: scale(1.02);
@@ -937,7 +937,7 @@ font-size: 14px;
 .Testimonials swiper-container swiper-slide .test-box .sep i{
   font-size: 60px; 
   color: rgba(187, 204, 238, 0.422); 
-}
+} */
 
 /*--------------------------------------------------------------
 # Services
