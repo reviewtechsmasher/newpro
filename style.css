@@ -2126,39 +2126,6 @@ swiper-slide img {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-.team {
-  background: #fff;
-  padding: 60px 0;
-}
-
-.team .service-box{
-/* width: 250px; */
-height: 300px;
-border-radius: 0px;
-}
-
-.team .service-box .sep{
-flex-direction: column;
-}
-.team .service-box .social{
-display: flex;
-justify-content: center;
-}
-.team .service-box:hover .sep h3{
- font-weight: 700;
- color: #fff !important;
-}
-.team .service-box .social i{
-color: rgba(0, 0, 0, 0.757);
-margin: 10px;
-font-size: large;
-}
-.team .service-box .social i:hover{
-color: rgba(0, 0, 0, 0.568);
-}
 
 
 
