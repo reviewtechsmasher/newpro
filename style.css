@@ -1,4 +1,5 @@
 
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -6,6 +7,9 @@
   scroll-behavior: smooth;
 }
 
+a{
+  color: #000;
+}
 
 #loading{
   width: 100%;
@@ -63,7 +67,21 @@ section {
   /* background-image: linear-gradient(to right bottom, #323cc6, #3f38cb, #4d32d0, #5a2ad4, #671fd8); */
 
 }
-
+.logo span p{
+margin:0 5px;
+font-size: 25px;
+font-weight: 1200;
+text-shadow: 2px 1px rgba(44, 43, 43, 0.372);
+}
+.logo .c{
+color: rgb(7, 254, 180);
+}
+.logo .m{
+color: rgb(255, 213, 6);
+}
+.logo .f{
+color: rgb(199, 217, 245);
+}
 .section-header {
   text-align: center;
   padding-bottom: 40px;
@@ -887,6 +905,14 @@ font-size: 14px;
   color: #848484;
 }
 
+
+/* Testimonial */
+
+.Testimonials swiper-container swiper-slide .test-box:hover{
+  background-color: rgba(245, 247, 253, 0.895);
+  transform: scale(1.02);
+  transform:all .3s ease;
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -912,8 +938,7 @@ font-size: 14px;
   flex-direction: column;
   text-align: center;
   transition: 0.3s;
-  border-radius: 15px !important;
-  outline: none;
+  border-radius: 15px;
 }
 
 .services .service-item .stars {
@@ -972,6 +997,12 @@ font-size: 14px;
 
 .services .swiper-slide {
   opacity: .3;
+}
+
+@media (max-width: 786px) {
+  swiper-container{
+    
+  }
 }
   
 @media (max-width: 1199px) {
