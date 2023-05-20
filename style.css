@@ -913,6 +913,32 @@ font-size: 14px;
   transform: scale(1.02);
   transform:all .3s ease;
 }
+.Testimonials swiper-container swiper-slide .test-box{
+  border-radius: 15px; 
+  box-shadow: 3px 18px 25px rgba(142, 154, 222, 0.686) ;
+   width: 500px;
+}
+.Testimonials swiper-container swiper-slide .test-box p{
+  font-family:Poppins;
+}
+.Testimonials swiper-container swiper-slide .test-box .social{
+  color: rgba(95, 144, 227, 0.759); 
+  display: flex; 
+  justify-content: left;
+  margin-left: 50px;  
+}
+
+.Testimonials swiper-container swiper-slide .test-box .sep img{
+  border-radius: 50%; 
+  width: 70px; 
+  border: 5px solid rgba(127, 142, 228, 0.686) ;
+  box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; 
+}
+.Testimonials swiper-container swiper-slide .test-box .sep i{
+  font-size: 60px; 
+  color: rgba(187, 204, 238, 0.422); 
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
