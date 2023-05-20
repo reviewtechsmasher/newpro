@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 200px;
   height: 1px;
   display: inline-block;
-  background-image: linear-gradient(to left bottom, #323cc6, #3f38cb, #4d32d0, #5a2ad4, #671fd8);
+  background-image: rgb(42, 42, 185); ;
   margin: 4px 10px;
 }
 
@@ -175,8 +175,7 @@ color: rgb(199, 217, 245);
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-image: linear-gradient(to left bottom, #323cc6, #3f38cb, #4d32d0, #5a2ad4, #671fd8);
-  width: 40px;
+background:rgb(42, 42, 185);   width: 40px;
   height: 40px;
   border-radius: 50%;
   transition: all 0.4s;
@@ -287,8 +286,7 @@ color: rgb(199, 217, 245);
 }
 
 .navbar .getstarted {
-  background-image: linear-gradient(to left bottom, #323cc6, #3f38cb, #4d32d0, #5a2ad4, #671fd8);
-  padding: 8px 20px;
+background:rgb(42, 42, 185);   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 50px;
   border: 1px solid rgba(41, 82, 172, 0.483);
@@ -502,8 +500,7 @@ color: rgb(199, 217, 245);
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
-  background-image: linear-gradient(to left bottom, #323cc6, #3f38cb, #4d32d0, #5a2ad4, #671fd8);
-  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+background:rgb(42, 42, 185);   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 
 .hero .btn-get-started span {
@@ -672,8 +669,7 @@ color: rgb(199, 217, 245);
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
-  background-image: linear-gradient(to left bottom, #323cc6, #3f38cb, #4d32d0, #5a2ad4, #671fd8);
-  box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+background:rgb(42, 42, 185);   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
 .about .btn-read-more span {
@@ -727,8 +723,7 @@ color: rgb(199, 217, 245);
 
 .values .box:hover {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  background-image: linear-gradient(to left bottom, #323cc6, #3f38cb, #4d32d0, #5a2ad4, #671fd8);
-}
+background:rgb(42, 42, 185); }
 
 .values .box:hover img {
   transform: scale(1);
@@ -2300,8 +2295,7 @@ swiper-slide img {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background-image: linear-gradient(to left bottom, #323cc6, #3f38cb, #4d32d0, #5a2ad4, #671fd8);
-  border: 0;
+background:rgb(42, 42, 185);   border: 0;
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
@@ -2418,8 +2412,7 @@ background:#606060;
   font-size: 16px;
   padding: 0 30px;
   margin: 3px;
-  background-image: linear-gradient(to left bottom, #323cc6, #3f38cb, #4d32d0, #5a2ad4, #671fd8);
-  color: #fff;
+background:rgb(42, 42, 185);   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
