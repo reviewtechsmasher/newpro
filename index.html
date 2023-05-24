@@ -19,9 +19,14 @@
     rel="stylesheet">
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
-    <!-- bootstrap cdn -->
+  <!-- bootstrap cdn -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
@@ -31,34 +36,88 @@
 
   <!-- aos animations -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
 
-
+  <!-- <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/> -->
   <!-- =======================================================
   colors gradient
   background-image: linear-gradient(to right bottom, #323cc6, #3f38cb, #4d32d0, #5a2ad4, #671fd8);
-  background-image:  background:rgb(42, 42, 185); ;
-  background-image: linear-gradient(to right top, #4226c9, #363dd3, #2a50db, #2261e2, #2370e7, #2670e8, #2871ea, #2b71eb, #3262e8, #3f51e2, #4e3cdb, #5d1fd1);
+  background:rgb(42, 42, 185);;;;  background-image: linear-gradient(to right top, #4226c9, #363dd3, #2a50db, #2261e2, #2370e7, #2670e8, #2871ea, #2b71eb, #3262e8, #3f51e2, #4e3cdb, #5d1fd1);
   ======================================================== -->
 </head>
+
 
 <body>
 
   <div id="loading">
 
-	</div>
+  </div>
+
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top bg-white">
-    <div class=" navbar container-fluid container-xl d-flex align-items-center justify-content-between">
+  <header id="header" class="header bg-black">
+    <div class=" navbar container container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="logo.PNG" width="60" height="60" alt="">
-        <span><p class="c">Cloud</p></span><span><p class="f">Flix</p></span><span><p class="m"> Media</p></span>
-      </a> 
+        <img src="lg.PNG" class="lg img-fluid" width="150" height="150" alt="">
+        <img src="lt.PNG" class="mt-2 lt" width="300" alt="">
 
-      <nav id="navbar" class="navbar">
+        <div class="icons d-flex align-content-center ">
+          <i class="fa-solid fa-location-dot m-2 text-white"></i>
+          <h5 class="text-white">Gurgaon</h5>
+        </div>
+        <!-- <span><p class="c">Cloud</p></span><span><p class="f">Flix</p></span><span><p class="m"> Media</p></span> -->
+      </a>
+
+      <ul class="icon-ul">
+        <li><a class="getstarted scrollto" href="#Contact" onClick="scrollToContact()">Contact us</a></li>
+        <div class="d-flex justify-content-center mx-4">
+          <i class="fa-solid fa-location-dot mx-2 text-white"></i>
+          <h5 class="text-white">Gurgaon</h5>
+
+          <i class="fa-solid fa-cart-shopping mx-3 my-1 text-white"></i>
+        </div>
+      </ul>
+
+    </div>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fa-solid fa-bars" id="btn"></i>
+      <i class="fa-solid fa-times" id="cancel"></i>
+    </label>
+
+
+    <div class="slidebar">
+      <div id="head">
+        <img src="logo.PNG" class="img-fluid" width="100" height="100" alt="">
+
+      </div>
+      <ul>
+        <li><a href="#"><i class="">Home</i></a></li>
+        <li><a href="#services"><i class="">Services</i></a></li>
+        <li><a href="#pricing"><i class="">Get Price</i></a></li>
+        <li><a href="#Contact"><i class="">Contact us</i></a></li>
+      </ul>
+
+       <!-- <h2>Follow us on </h2>
+              <br>
+              <div class=" d-flex justify-content-center align-items-center" style="color: #fff; font-size: x-large;">
+              <i class="fa-brands fa-instagram mx-3"></i>
+              <i class="fa-brands fa-facebook mx-3"></i>
+              <i class="fa-brands fa-linkedin-in mx-3"></i>
+            </div> -->
+    </div>
+
+
+    <div class="lower-nav d-flex justify-content-center ">
+      <nav id="navbar" class="navbar align-content-center">
         <ul>
-          <li class="dropdown"><a href="#hero" ><span>Home</span><i class="fa-solid fa-angle-down"></i></a>
+          <li class="dropdown"><a href="#hero"><span>Home</span><i class="fa-solid fa-angle-down"></i></a>
             <ul>
               <li><a href="index-2.html">SEO Agency</a></li>
               <li><a href="index-3.html">Marketing Company</a></li>
@@ -69,7 +128,8 @@
               <li><a href="index-8.html">SEO Consultant</a></li>
             </ul>
           </li>
-          <li class="dropdown nav-link scrollto"><a href="#Services" onClick="scrollToService()"><span>Services</span><i class="fa-solid fa-angle-down"></i></a>
+          <li class="dropdown nav-link scrollto"><a href="#Services" onClick="scrollToService()"><span>Services</span><i
+                class="fa-solid fa-angle-down"></i></a>
             <ul>
               <li><a href="content-marketing.html">Content Marketing</a></li>
               <li><a href="app-development.html">App Development</a></li>
@@ -79,7 +139,7 @@
             </ul>
           </li>
 
-          <li class="dropdown nav-link scrollto"><a href="#hero" onClick="scrollToPages()"><span>Pages</span><i class="fa-solid fa-angle-down"></i></a>
+          <!-- <li class="dropdown nav-link scrollto"><a href="#hero" onClick="scrollToPages()"><span>Pages</span><i class="fa-solid fa-angle-down"></i></a>
             <ul>
               <li><a href="about-us.html">About Us</a></li>
               <li><a href="our-team.html">Our Team</a></li>
@@ -91,8 +151,9 @@
               <li><a href="coming-soon.html">Coming Soon</a></li>
               <li><a href="error.html">Error</a></li>
             </ul>
-          </li>
-          <li class="dropdown nav-link scrollto"><a href="#portfolio" onClick="scrollToPort()"><span>Portfolio</span> <i class="fa-solid fa-angle-down"></i></a>
+          </li> -->
+          <li class="dropdown nav-link scrollto"><a href="#portfolio" onClick="scrollToPort()"><span>Portfolio</span> <i
+                class="fa-solid fa-angle-down"></i></a>
             <ul>
               <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
               <li><a href="portfolio-grid.html">Portfolio Grid</a></li>
@@ -100,34 +161,33 @@
               <li><a href="portfolio-single.html">Portfolio Single</a></li>
             </ul>
           </li>
-          <li class="dropdown nav-link scrollto"><a href="features" onClick="scrollToShop()"><span>Shop</span><i class="fa-solid fa-angle-down"></i></a>
+          <!-- <li class="dropdown nav-link scrollto"><a href="features" onClick="scrollToShop()"><span>Shop</span><i class="fa-solid fa-angle-down"></i></a>
             <ul>
               <li><a href="shop.html">Catelog Page</a></li>
               <li><a href="cart.html">Shopping Cart</a></li>
               <li><a href="checkout.html">Checkout Page</a></li>
               <li><a href="single-product.html">Single Product</a></li>
             </ul>
-          </li>
-        
+          </li> -->
 
-
-          <li><a class="getstarted scrollto" href="#Contact" onClick="scrollToContact()">Contact us</a></li>
         </ul>
-        <i class="fa-solid fa-bars mobile-nav-toggle m-3"></i>      
-      </nav><!-- .navbar -->
+        <!-- <i class="fa-solid fa-bars mobile-nav-toggle m-3"></i> -->
 
+
+      </nav><!-- .navbar -->
     </div>
   </header><!-- End Header -->
 
+
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center">
+  <section id="hero" class="hero d-flex align-items-center flex-column">
     <!-- <img src="shape3-home1.png" alt="" style="margin-bottom:auto ;"> -->
-    <!-- <img src="bg-overlay-home1.png" alt="" > -->
-    <div class="container">
+    <div class="container landing">
       <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">We connect to build you
+        <div class="col-lg-6 d-flex flex-column justify-content-center my-3 main-text">
+          <h1 data-aos="fade-up" style="z-index: 20; font-weight: bolder; font-size: 4rem;">We offer <span>modern solutions</span> to
+            grow your business</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400" class="d-flex justify-content-center">We connect to build you
           </h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start ">
@@ -145,428 +205,771 @@
           </div>
         </div>
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          <img src="Usability testing.gif" id="lp" data-aos="zoom-in" class="img-fluid" alt="">
-
+          <!-- <img src="Usability testing.gif" id="lp" data-aos="zoom-in" class="img-fluid" alt=""> -->
+          <div class="ball-box">
+            <div class="ball1"></div>
+            <div class="ball2"></div>
+            <div class="ball3"></div>
+            <div class="ball4"></div>
+            <div class="ball5"></div>
+            <div class="ball6"></div>
+            <div class="ball7">
+             
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
   </section><!-- End Hero -->
 
+  <div class="blur ">
+    <!-- <img src="blend.png" alt=""> -->
+  </div>
 
-  <section id="Services" class="services">
+  <div class="back">
 
+    <div class="blend1" data-aos="fade-left">
+      <a href="">
+        <h2 class="text-center text-uppercase">Get Price</h2>
+      </a>
+      <a href="">
+        <h3 style="font-size: x-large; font-weight: bold; text-align: center;">BASIC</h3>
+      </a>
+    </div>
+    <div class="blend2" data-aos="fade-up">
+      <a href="">
+        <h2 class="text-center text-uppercase">Get Price</h2>
+      </a>
+      <a href="">
+        <h3 style="font-size: x-large; font-weight: bold; text-align: center; ">STANDARD</h3>
+      </a>
+    </div>
+    <div class="blend3" data-aos="fade-left">
+      <a href="">
+        <h2 class="text-center text-uppercase">Get Price</h2>
+      </a>
+      <a href="">
+        <h3 style="font-size: x-large; font-weight: bold; text-align: center; ">PRO</h3>
+      </a>
+    </div>
+
+  </div>
+
+
+  <!-- ////////////Service section starts//////////////////// -->
+
+  <section class="services" id="services">
+    <div class="container online">
+
+      <header class="section-header">
+        <h2>What we offer ?</h2>
+        <p><span>Online</span> Services</p>
+      </header>
+
+      <!-- <div class="service-container "> -->
+
+      <div class="swiper mySwiper slider">
+        <div class="swiper-wrapper d-flex justify-content-center">
+          <div class="swiper-slide">
+            <div class="service3" data-aos="fade-right">
+              <img src="seo.jpg" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service2 " data-aos="fade-left">
+              <img src="dm.jpg" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service1 " data-aos="fade-right">
+              <img src="seo.jfif" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service4 " data-aos="fade-left">
+              <img src="trads.jfif" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service5 " data-aos="fade-left">
+              <img src="trads.jfif" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service6 " data-aos="fade-left">
+              <img src="trads.jfif" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service7 " data-aos="fade-left">
+              <img src="trads.jfif" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service8 " data-aos="fade-left">
+              <img src="trads.jfif" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+
+
+      </div>
+
+
+    </div>
+    <!-- </div> -->
+  </section>
+
+
+
+  <section class="services">
+    <div class="container offline">
+      <header class="section-header">
+        <p><span>Offline</span> Services</p>
+      </header>
+
+      <!-- <div class="service-container"> -->
+
+      <div class="swiper mySwiper slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="service3" data-aos="fade-right">
+              <img src="ppc.jpg" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="service2 " data-aos="fade-left">
+              <img src="dm.jpg" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="service1 " data-aos="fade-right">
+              <img src="seo.jfif" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="service4 " data-aos="fade-left">
+              <img src="trads.jfif" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="service5 " data-aos="fade-right">
+              <img src="seo.jfif" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="service6 " data-aos="fade-left">
+              <img src="trads.jfif" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="service7 " data-aos="fade-right">
+              <img src="seo.jfif" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="service8 " data-aos="fade-left">
+              <img src="trads.jfif" width="200" height="320" alt="">
+              <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                <div class="d-flex flex-row">
+                  <h2 class="w-100">SEO</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                  corporis commodi!</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+
+      </div>
+      <!-- </div> -->
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+
+  <!-- /////////////////pricing section starts///////////////// -->
+
+  <section id="pricing" class="pricing">
+    <div class="container price-cont" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>Get Price</h2>
+        <p>Check our <span>Pricing</span></p>
+      </header>
+
+      <table class="tab">
+        <tr class="tab-head">
+          <th></th>
+          <th>
+            <div class="blended1" data-aos="fade-left">
+              <a href="">
+                <h3 style="font-size: large; font-weight: bold; text-align: center;">BASIC</h3>
+              </a>
+            </div>
+          </th>
+          <th>
+            <div class="blended2" data-aos="fade-left">
+              <a href="">
+                <h3 style="font-size: large; font-weight: bold; text-align: center;">STANDARD</h3>
+              </a>
+            </div>
+          </th>
+          <th>
+            <div class="blended3" data-aos="fade-left">
+              <a href="">
+                <h3 style="font-size: large; font-weight: bold; text-align: center;">ADVANCE</h3>
+              </a>
+            </div>
+          </th>
+        </tr>
+        <tr class="r1">
+          <td>
+            <p>Graphic Designs including reels</p>
+          </td>
+          <td>
+            <i class="fa-regular fa-circle-check"></i>
+            <p>15 only</p>
+          </td>
+
+          <td>
+            <i class="fa-regular fa-circle-check"></i>
+            <p>15 only</p>
+          </td>
+          <td class="td-end">
+            <i class="fa-regular fa-circle-check"></i>
+            <p>20</p>
+          </td>
+
+        </tr>
+        <tr class="r2">
+          <td>
+            <p>Setting ads campaign</p>
+          </td>
+          <td>
+            <i class="fa-regular fa-circle-check"></i>
+            <p></p>
+          </td>
+
+          <td>
+            <i class="fa-regular fa-circle-check"></i>
+          </td>
+          <td class="td-end">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </td>
+
+        </tr>
+        <tr class="r3">
+          <td>
+            <p>Social media handeling</p>
+          </td>
+          <td>
+            <i class="fa-regular fa-circle-check"></i>
+            <p></p>
+          </td>
+
+          <td>
+            <i class="fa-regular fa-circle-check"></i>
+            <p></p>
+          </td>
+          <td class="td-end">
+            <i class="fa-regular fa-circle-check"></i>
+          </td>
+
+        </tr>
+        <tr class="r3">
+          <td>
+            <p>google reviews</p>
+          </td>
+          <td>
+            <i class="fa-regular fa-circle-check"></i>
+            <p></p>
+          </td>
+
+          <td>
+            <i class="fa-regular fa-circle-check"></i>
+            <p></p>
+          </td>
+          <td class="td-end">
+            <i class="fa-regular fa-circle-check"></i>
+          </td>
+
+        </tr>
+        <tr class="r1">
+          <td>
+            <p>Articles on free and paid platforms</p>
+          </td>
+          <td>
+            <i class="fa-regular fa-circle-xmark"></i>
+            <p></p>
+          </td>
+
+          <td>
+            <i class="fa-regular fa-circle-xmark"></i>
+            <p></p>
+          </td>
+          <td class="td-end">
+            <i class="fa-regular fa-circle-check"></i>
+          </td>
+
+        </tr>
+        <tr class="r2">
+          <td>
+            <p>Photos and video shoots</p>
+          </td>
+          <td>
+            <i class="fa-regular fa-circle-check"></i>
+            <p>1 time in every two week</p>
+          </td>
+
+          <td>
+            <i class="fa-regular fa-circle-check"></i>
+            <p>1 time weekly</p>
+          </td>
+          <td class="td-end">
+            <i class="fa-regular fa-circle-xmark"></i>
+            <p>2 times weekly</p>
+          </td>
+
+        </tr>
+        <tr class="r1">
+          <td>
+            <p>bot master tool for whatsapp marketing</p>
+          </td>
+          <td>
+            <i class="fa-regular fa-circle-xmark"></i>
+            <p></p>
+          </td>
+
+          <td>
+            <i class="fa-regular fa-circle-xmark"></i>
+            <p></p>
+          </td>
+          <td class="td-end">
+            <i class="fa-regular fa-circle-check"></i>
+          </td>
+
+        </tr>
+        <tr class="r2">
+          <td>
+            <p>SEO (serch ingene optimisation) for Google my bussiness</p>
+          </td>
+          <td>
+            <i class="fa-regular fa-circle-xmark"></i>
+            <p></p>
+          </td>
+
+          <td>
+            <i class="fa-regular fa-circle-check"></i>
+            <p></p>
+          </td>
+          <td class="td-end">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </td>
+
+        </tr>
+        <tr class="r3">
+          <td>
+            <p>SEO (serch ingene optimisation) for Website designing</p>
+          </td>
+          <td>
+            <i class="fa-regular fa-circle-xmark"></i>
+            <p></p>
+          </td>
+
+          <td>
+            <i class="fa-regular fa-circle-check"></i>
+            <p></p>
+          </td>
+          <td class="td-end">
+            <i class="fa-regular fa-circle-check"></i>
+          </td>
+
+        </tr>
+        <tr class="r4">
+          <td>
+            <p>Website optimisation</p>
+          </td>
+          <td>
+            <i class="fa-regular fa-circle-xmark"></i>
+            <p></p>
+          </td>
+
+          <td>
+            <i class="fa-regular fa-circle-check"></i>
+            <p></p>
+          </td>
+          <td class="td-end">
+            <i class="fa-regular fa-circle-check"></i>
+          </td>
+
+        </tr>
+      </table>
+
+      <div class="d-flex justify-content-around lower-blend">
+        <div class="blend1" data-aos="fade-left">
+          <a href="">
+            <h2 class="text-center text-uppercase">Get Price</h2>
+          </a>
+          <a href="">
+            <h3 style="font-size: x-large; font-weight: bold; text-align: center;">BASIC</h3>
+          </a>
+          <div class="lower-suffix">
+            <h2 style=" font-size: 22px;
+          text-align: center;
+          font-weight: 800;
+          color: #ff008c;
+          font-size: 30px;
+          margin-bottom: 3px;"><span>Rs</span> 9k</h2>
+            <a href="" class="d-flex justify-content-center"
+              style="border:1px solid #f61677; border-radius: 20px; font-weight: bold; background-color:rgba(249, 97, 221, 0.897);">BUY</a>
+          </div>
+        </div>
+        <div class="blend2" data-aos="fade-up">
+          <a href="">
+            <h2 class="text-center text-uppercase">Get Price</h2>
+          </a>
+          <a href="">
+            <h3 style="font-size: x-large; font-weight: bold; text-align: center; ">STANDARD</h3>
+          </a>
+          <div class="lower-suffix">
+            <h2 style=" font-size: 22px;
+          text-align: center;
+          font-weight: 800;
+          color: #00ff7b;
+          font-size: 30px;
+          margin-bottom: 3px;"><span>Rs</span> 15k</h2>
+            <a href="" class="d-flex justify-content-center"
+              style="border:1px solid #16c9f6; border-radius: 20px; font-weight: bold; background-color:rgba(25, 210, 124, 0.809);">BUY</a>
+          </div>
+        </div>
+        <div class="blend3" data-aos="fade-left">
+          <a href="">
+            <h2 class="text-center text-uppercase">Get Price</h2>
+          </a>
+          <a href="">
+            <h3 style="font-size: x-large; font-weight: bold; text-align: center; ">PRO</h3>
+          </a>
+          <div class="lower-suffix">
+            <h2 style=" font-size: 22px;
+          text-align: center;
+          font-weight: 800;
+          color: #cdeb39;
+          font-size: 30px;
+          margin-bottom: 3px;
+          "><span>Rs</span> 20k</h2>
+            <a href="" class="d-flex justify-content-center"
+              style="border:1px solid #f66416; border-radius: 20px; font-weight: bold; background-color:rgba(204, 247, 11, 0.945);">BUY</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+   <!-- ======= Pricing Section ======= -->
+   <section id="pricing2" class="pricing d-[1400px]-none">
+    <!-- <img src="bg-overlay-home1.png" alt="">   -->
+    <img src="shape2-home1.png" alt="">
     <div class="container" data-aos="fade-up">
 
       <header class="section-header">
-        <h2>Services</h2>
-        <p>What we offer online</p>
+        <h2>Get Price</h2>
+        <p>Check our <span>Pricing</span></p>
       </header>
 
-
-      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="20"
-        slides-per-view="auto">
-        <swiper-slide class="col-lg-4 col-md-6 d-flex justify-content-center">
-          <div class="service-item">
-            <div class="sep">
-              <img src="trads.jfif" class="service-img servswip" alt="">
+      <div class="row gy-4" data-aos="fade-left">
 
 
-              <h3>Digital Marketing</h3>
-
+        <div class="col-md-4 sm-p-b60">
+          <div class="ot-pricing-table bg-shape s1">
+            <span class="title-table">Standard</span>
+            <div class="inner-table">
+              <img src="basic.jpg" class="pr-icon1 img-fluid" alt="Standard">
+              <h2><sup>Rs</sup> 9k</h2>
+              <p>Monthly Package</p>
+              <div class="details">
+                <ul>
+                  <li>1=> Graphic Designs including reels (15)</li>
+                  <hr>
+                  <li>2=> Setting ads campaign</li>
+                  <hr>
+                  <li>3=> Social media handeling</li>
+                  <hr>
+                  <li>4=> google reviews</li>
+                  <hr>
+                  <li>5=> Photos and video shoots (1 time in every two week)</li>
+            
+                </ul>
+              </div>
             </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-
-            <p>
-              <i class="fa-solid fa-quote-left"></i>
-             HT hindi and English, times of India, Indian express, Dainik Bhaskar, Dainik Jagram etc
-              <i class="fa-solid fa-quote-right"></i>
-            </p>
-
-            <div class="profile mt-auto">
-              <!-- <img src="assets/img/testimonials/testimonials-2.jpg" class="service-img" alt=""> -->
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-            </div>
+            <a href="#" class="octf-btn octf-btn-icon octf-btn-secondary">Choose Plane <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
-        </swiper-slide>
-        <swiper-slide class="col-lg-4 col-md-6 d-flex justify-content-center">
-          <div class="service-item">
-            <div class="sep">
-              <img src="trads.jfif" class="service-img servswip" alt="">
-
-
-              <h3>Graphics Making</h3>
-
+        </div>
+        <div class="col-md-4 sm-p-b60">
+          <div class="ot-pricing-table bg-shape s2">
+            <span class="title-table">Economy</span>
+            <div class="inner-table">
+              <img src="standard.jpg" class="pr-icon2 img-fluid" alt="Economy">
+              <h2><sup>Rs</sup> 15k</h2>
+              <p>Monthly Package</p>
+              <div class="details">
+                <ul>
+                  <li>1=> Graphic Designs including reels (15)</li>
+                  <hr>
+                  <li>2=> Setting ads campaign</li>
+                  <hr>
+                  <li>3=> Social media handeling</li>
+                  <hr>
+                  <li>4=> google reviews</li>
+                  <hr>
+                  <li>5=> Photos and video shoots (1 time in every two week)</li>
+                  <hr>
+                  <li>6=> SEO for Google My Bussiness</li>
+                  <hr>
+                  <li>7=> SEO for Website</li>
+                  <hr>
+                  <li>8=> Website optimisation</li>
+                </ul>
+              </div>
             </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-
-            <p>
-              <i class="fa-solid fa-quote-left"></i>
-              Red FM, Big FM, Akashvani, Vividh Bharati, Radio Mirchi etc
-              <i class="fa-solid fa-quote-right"></i>
-            </p>
-
-            <div class="profile mt-auto">
-              <!-- <img src="assets/img/testimonials/testimonials-2.jpg" class="service-img" alt=""> -->
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-            </div>
+            <a href="#" class="octf-btn octf-btn-icon octf-btn-third">Choose Plane <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
-        </swiper-slide>
-        <swiper-slide class="col-lg-4 col-md-6 d-flex justify-content-center">
-          <div class="service-item">
-            <div class="sep">
-              <img src="seo.jfif" class="servswip service-img" alt="">
+        </div>
+        <div class="col-md-4">
+          <div class="ot-pricing-table bg-shape s3">
+            <span class="title-table">Executive</span>
+            <div class="inner-table">
+              <img src="adv.jpg"  class="pr-icon3 img-fluid" alt="Executive">
+              <h2><sup>Rs</sup> 20k</h2>
+              <p>Monthly Package</p>
+              <div class="details">
+                <ul>
+                  <li>1=> Graphic Designs including reels (20)</li>
+                  <hr>
+                  <li>2=> Setting ads campaign</li>
+                  <hr>
+                  <li>3=> Social media handeling</li>
+                  <hr>
+                  <li>4=> google reviews</li>
+                  <hr>
+                  <li>5=> Photos and video shoots (2 times weekly)</li>
+                  <hr>
+                  <li>6=> SEO for Google My Bussiness</li>
+                  <hr>
+                  <li>7=> SEO for Website</li>
+                  <hr>
+                  <li>8=> Website optimisation</li>
+                  <hr>
+                  <li>9=> Bot Master tool for whatsapp marketing</li>
+                  <hr>
+                  <li>10=> Articles on free and paid platforms</li>
 
-              <h3>Video editing</h3>
-
-
+                </ul>
+              </div>
             </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p>
-              <i class="fa-solid fa-quote-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-              quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="fa-solid fa-quote-right"></i>
-            </p>
-            <div class="profile mt-auto">
-              <!-- <img src="assets/img/testimonials/testimonials-3.jpg" class="service-img" alt=""> -->
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
-            </div>
+            <a href="#" class="octf-btn octf-btn-icon octf-btn-primary">Choose Plane <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
-        </swiper-slide>
-        <swiper-slide class="col-lg-4 col-md-6 d-flex justify-content-center">
-          <div class="service-item">
-            <div class="sep">
-              <img src="dm.jpg" class="servswip service-img" alt="">
+        </div>
 
+       </div>
 
-              <h3>Website designing</h3>
-
-
-            </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p>
-              <i class="fa-solid fa-quote-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-              quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="fa-solid fa-quote-right"></i>
-            </p>
-            <div class="profile mt-auto">
-              <!-- <img src="assets/img/testimonials/testimonials-4.jpg" class="service-img" alt=""> -->
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="col-lg-4 col-md-6 d-flex justify-content-center">
-          <div class="service-item">
-            <div class="sep">
-              <img src="smm.jfif" class="servswip service-img" alt="">
-
-
-              <h3>Influencer Marketing</h3>
-
-            </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p>
-              <i class="fa-solid fa-quote-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-              quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="fa-solid fa-quote-right"></i>
-            </p>
-            <div class="profile mt-auto">
-              <!-- <img src="assets/img/testimonials/testimonials-4.jpg" class="service-img" alt=""> -->
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="col-lg-4 col-md-6 d-flex justify-content-center">
-          <div class="service-item">
-            <div class="sep">
-              <img src="oad.jpg" class="servswip service-img" alt="">
-
-              <h3>Uniqe Branding Stratagies</h3>
-
-            </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p>
-              <i class="fa-solid fa-quote-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-              quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="fa-solid fa-quote-right"></i>
-            </p>
-            <div class="profile mt-auto">
-              <!-- <img src="assets/img/testimonials/testimonials-4.jpg" class="service-img" alt=""> -->
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        
-        <!-- <swiper-slide>Slide 6</swiper-slide>
-        <swiper-slide>Slide 7</swiper-slide>
-        <swiper-slide>Slide 8</swiper-slide>
-        <swiper-slide>Slide 9</swiper-slide> -->
-      </swiper-container>
-
-
-
-<!-- offline service material -->
-
-      <header class="section-header">
-        <p>What we offer offline</p>
-      </header>
-
-
-      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="20"
-        slides-per-view="auto">
-        <swiper-slide class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-          <div class="service-item">
-            <div class="sep">
-              <img src="trads.jfif" class="service-img servswip" alt="">
-
-
-              <h3>Newspapers</h3>
-
-            </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-
-            <p>
-              <i class="fa-solid fa-quote-left"></i>
-             HT hindi and English, times of India, Indian express, Dainik Bhaskar, Dainik Jagram etc
-              <i class="fa-solid fa-quote-right"></i>
-            </p>
-
-            <div class="profile mt-auto">
-              <!-- <img src="assets/img/testimonials/testimonials-2.jpg" class="service-img" alt=""> -->
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-          <div class="service-item">
-            <div class="sep">
-              <img src="trads.jfif" class="service-img servswip" alt="">
-
-
-              <h3>Radio adds</h3>
-
-            </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-
-            <p>
-              <i class="fa-solid fa-quote-left"></i>
-              Red FM, Big FM, Akashvani, Vividh Bharati, Radio Mirchi etc
-              <i class="fa-solid fa-quote-right"></i>
-            </p>
-
-            <div class="profile mt-auto">
-              <!-- <img src="assets/img/testimonials/testimonials-2.jpg" class="service-img" alt=""> -->
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-          <div class="service-item">
-            <div class="sep">
-              <img src="seo.jfif" class="servswip service-img" alt="">
-
-              <h3>Hoardings & Flexes</h3>
-
-
-            </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p>
-              <i class="fa-solid fa-quote-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-              quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="fa-solid fa-quote-right"></i>
-            </p>
-            <div class="profile mt-auto">
-              <!-- <img src="assets/img/testimonials/testimonials-3.jpg" class="service-img" alt=""> -->
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-          <div class="service-item">
-            <div class="sep">
-              <img src="dm.jpg" class="servswip service-img" alt="">
-
-
-              <h3>Banners</h3>
-
-
-            </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p>
-              <i class="fa-solid fa-quote-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-              quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="fa-solid fa-quote-right"></i>
-            </p>
-            <div class="profile mt-auto">
-              <!-- <img src="assets/img/testimonials/testimonials-4.jpg" class="service-img" alt=""> -->
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-          <div class="service-item">
-            <div class="sep">
-              <img src="smm.jfif" class="servswip service-img" alt="">
-
-
-              <h3>pamphlets</h3>
-
-            </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p>
-              <i class="fa-solid fa-quote-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-              quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="fa-solid fa-quote-right"></i>
-            </p>
-            <div class="profile mt-auto">
-              <!-- <img src="assets/img/testimonials/testimonials-4.jpg" class="service-img" alt=""> -->
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-          <div class="service-item">
-            <div class="sep">
-              <img src="oad.jpg" class="servswip service-img" alt="">
-
-              <h3>Auto-Rickshaw Branding</h3>
-
-            </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p>
-              <i class="fa-solid fa-quote-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-              quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="fa-solid fa-quote-right"></i>
-            </p>
-            <div class="profile mt-auto">
-              <!-- <img src="assets/img/testimonials/testimonials-4.jpg" class="service-img" alt=""> -->
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-          <div class="service-item">
-            <div class="sep">
-              <img src="oad.jpg" class="servswip service-img" alt="">
-
-              <h3>PVR</h3>
-
-            </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p>
-              <i class="fa-solid fa-quote-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-              quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="fa-solid fa-quote-right"></i>
-            </p>
-            <div class="profile mt-auto">
-              <!-- <img src="assets/img/testimonials/testimonials-4.jpg" class="service-img" alt=""> -->
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-          </div>
-        </swiper-slide>
-        <!-- <swiper-slide>Slide 6</swiper-slide>
-        <swiper-slide>Slide 7</swiper-slide>
-        <swiper-slide>Slide 8</swiper-slide>
-        <swiper-slide>Slide 9</swiper-slide> -->
-      </swiper-container>
-
-      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-
-
+    </div>
 
   </section>
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about bg-white">
 
-    <div class="container" data-aos="fade-up">
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about ">
+
+    <div class="container abt" data-aos="fade-up">
       <div class="row gx-0">
 
 
         <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="50">
-          <div class="content">
-            <h2>Who We Are</h2>
+          <div class="content bg-dark rounded-top-5">
+            <h2 style="color: rgb(218, 22, 130);">Who We Are</h2>
             <h3>A hardworking Team under Dreamer, doer, and founder of Cloud Flix Media</h3>
             <p>
               Mr. Surjeet Pradhan, the strength of the team And founder of Cloud Flix Media, a revolutionary media
               Company that creates job opportunities through media.
-              He spent his formative years in DBN Amarvilla and id motivated by his passion to make a difference in the industry.
+              He spent his formative years in DBN Amarvilla and id motivated by his passion to make a difference in the
+              industry.
               Presenting this website , the sollutions for all your quaries to help growing your empire.
             </p>
-            <div class="text-center text-lg-start">
+            <div class="text-center text-lg-start bg-dark">
               <a href="#"
                 class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center octf-btn">
-                <span>Read More</span>
+                <span>Show More</span>
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="70">
-          <img src="modl1.jpg" class="img-fluid" alt="">
+        <div class="col-lg-6 d-flex align-items-center mdl1" data-aos="zoom-out" data-aos-delay="70">
+          <!-- <img src="modl1.jpg" class="img-fluid" style=" box-shadow: 0 0 68px 8px rgba(16, 11, 37, 0.87) inset; " alt=""> -->
+          <video class="img-fluid" autoplay muted loop>
+            <source src="v2.mp4" type="video/mp4" class="img-fluid">
+            <!-- Your browser does not support HTML video. -->
+          </video>
         </div>
 
       </div>
     </div>
 
-  </section><!-- End About Section -->
+  </section>
 
   <!-- ======= Values Section ======= -->
-  <section id="values" class="values">
+  <section id="values" class="values ">
 
     <div class="container" data-aos="fade-up">
 
-      <header class="section-header">
+      <header class="section-header ">
         <h2>Our Values</h2>
-        <p>Our core values</p>
+        <p>Our <span>core</span> <span>values</span></p>
       </header>
 
       <div class="row ">
@@ -597,8 +1000,8 @@
 
         <div class="col-lg-4 mt-4 mt-lg-0">
           <div class="box" data-aos="fade-up" data-aos-delay="400">
-            <i class="fa-sharp fa-solid fa-rocket"></i>           
-           <h3>Before time service.</h3>
+            <i class="fa-sharp fa-solid fa-rocket"></i>
+            <h3>Before time service.</h3>
             <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
           </div>
         </div>
@@ -613,7 +1016,7 @@
 
         <div class="col-lg-4 mt-4 mt-lg-0">
           <div class="box" data-aos="fade-up" data-aos-delay="600">
-            <i class="fa-solid fa-download"></i>          
+            <i class="fa-solid fa-download"></i>
             <h3>Easy access</h3>
             <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
           </div>
@@ -626,71 +1029,71 @@
   </section><!-- End Values Section -->
 
   <!-- ======= Counts Section ======= -->
- 	<!-- ======= Counts Section ======= -->
-   <section id="counts" class="counts">
-		<div class="container" data-aos="fade-up">
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts ">
+    <div class="container" data-aos="fade-up">
 
-			<div class="row gy-4">
+      <div class="row gy-4">
 
-				<div class="col-lg-3 col-md-6">
-					<div class="count-box my-3 text-center">
-						<i class="far fa-smile" style="color: #16c9f6;"></i>
-						<div>
-							<span data-purecounter-start="0" data-purecounter-end="8000" data-purecounter-duration="4"
-								class="purecounter"></span>
-							<p>Happy Clients</p>
-						</div>
-					</div>
-				</div>
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box my-3 text-center">
+            <i class="far fa-smile" style="color: #16c9f6;"></i>
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="8000" data-purecounter-duration="4"
+                class="purecounter"></span>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
 
-				<div class="col-lg-3 col-md-6">
-					<div class="count-box my-3 text-center">
-						<i class="fas fa-project-diagram" style="color: #16c9f6;"></i>
-						<div>
-							<span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="4"
-								class="purecounter"></span>
-							<p>Projects</p>
-						</div>
-					</div>
-				</div>
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box my-3 text-center">
+            <i class="fas fa-project-diagram" style="color: #16c9f6;"></i>
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="4"
+                class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div>
+        </div>
 
-				<div class="col-lg-3 col-md-6">
-					<div class="count-box my-3 text-center">
-						<i class="fas fa-phone-alt" style="color: #16c9f6;"></i>
-						<div>
-							<span data-purecounter-start="0" data-purecounter-end="4574" data-purecounter-duration="4"
-								class="purecounter"></span>
-							<p>Hours Of Support</p>
-						</div>
-					</div>
-				</div>
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box my-3 text-center">
+            <i class="fas fa-phone-alt" style="color: #16c9f6;"></i>
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="4574" data-purecounter-duration="4"
+                class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div>
+        </div>
 
-				<div class="col-lg-3 col-md-6">
-					<div class="count-box my-3 text-center">
-						<i class="fas fa-user-friends" style="color: #16c9f6;"></i>
-						<div>
-							<span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="4"
-								class="purecounter"></span>
-							<p>Hard Workers</p>
-						</div>
-					</div>
-				</div>
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box my-3 text-center">
+            <i class="fas fa-user-friends" style="color: #16c9f6;"></i>
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="4"
+                class="purecounter"></span>
+              <p>Hard Workers</p>
+            </div>
+          </div>
+        </div>
 
-			</div>
+      </div>
 
-		</div>
-	</section><!-- End Counts Section -->
+    </div>
+  </section><!-- End Counts Section -->
 
 
 
   <!-- ======= Features Section ======= -->
-  <section id="features" class="features">
+  <!-- <section id="features" class="features ">
 
     <div class="container" data-aos="fade-up">
 
       <header class="section-header">
         <h2>Features</h2>
-        <p>Benefits towards our platform</p>
+        <p><span>Benefits</span> towards our platform</p>
       </header>
 
       <div class="row">
@@ -704,42 +1107,42 @@
 
             <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
               <div class="feature-box d-flex align-items-center">
-                <i class="fa-solid fa-check"></i>               
+                <i class="fa-solid fa-check"></i>
                 <h3>Expanding market reach</h3>
               </div>
             </div>
 
             <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
               <div class="feature-box d-flex align-items-center">
-                <i class="fa-solid fa-check"></i>                
+                <i class="fa-solid fa-check"></i>
                 <h3>Cost-Effectiveness</h3>
               </div>
             </div>
 
             <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
               <div class="feature-box d-flex align-items-center">
-                <i class="fa-solid fa-check"></i>                
+                <i class="fa-solid fa-check"></i>
                 <h3>Engaging and Valuable content</h3>
               </div>
             </div>
 
             <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
               <div class="feature-box d-flex align-items-center">
-                <i class="fa-solid fa-check"></i>               
+                <i class="fa-solid fa-check"></i>
                 <h3>Track and measure the performance of your compaigns accuratly</h3>
               </div>
             </div>
 
             <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
               <div class="feature-box d-flex align-items-center">
-                <i class="fa-solid fa-check"></i>                
+                <i class="fa-solid fa-check"></i>
                 <h3>Personalization and Customer Engagement</h3>
               </div>
             </div>
 
             <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
               <div class="feature-box d-flex align-items-center">
-                <i class="fa-solid fa-check"></i>                
+                <i class="fa-solid fa-check"></i>
                 <h3>Brand Building and Awareness Enables business to adapt to changing market conditions</h3>
               </div>
             </div>
@@ -747,101 +1150,13 @@
           </div>
         </div>
 
-      </div> <!-- / row -->
-
-      <!-- Feature Tabs -->
-      <!-- <div class="row feture-tabs" data-aos="fade-up">
-          <div class="col-lg-6">
-            <h3>Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</h3> -->
-
-      <!-- Tabs -->
-      <!-- <ul class="nav nav-pills mb-3">
-              <li>
-                <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Saepe fuga</a>
-              </li>
-              <li>
-                <a class="nav-link" data-bs-toggle="pill" href="#tab2">Voluptates</a>
-              </li>
-              <li>
-                <a class="nav-link" data-bs-toggle="pill" href="#tab3">Corrupti</a>
-              </li>
-            </ul>End Tabs -->
-
-      <!-- Tab Content -->
-      <!-- <div class="tab-content" id="contact">
-
-              <div class="tab-pane fade show active" id="tab1">
-                <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque
-                  consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
-                </div>
-                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non
-                  eveniet magni quaerat nemo et.</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
-                </div>
-                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure
-                  molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et
-                  perferendis.</p>
-              </div>End Tab 1 Content -->
-
-      <!-- <div class="tab-pane fade show" id="tab2">
-                <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque
-                  consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
-                </div>
-                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non
-                  eveniet magni quaerat nemo et.</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
-                </div>
-                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure
-                  molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et
-                  perferendis.</p>
-              </div>End Tab 2 Content -->
-
-      <!-- <div class="tab-pane fade show" id="tab3">
-                <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque
-                  consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
-                </div>
-                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non
-                  eveniet magni quaerat nemo et.</p>
-                <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i>
-                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
-                </div>
-                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure
-                  molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et
-                  perferendis.</p>
-              </div>End Tab 3 Content -->
-
-      <!-- </div>
-
-          </div>
-
-          <div class="col-lg-6">
-            <img src="assets/img/features-2.png" class="img-fluid" alt="">
-          </div>
-
-        </div>End Feature Tabs -->
-
-  <!-- End Feature Icons -->
-
+      </div> 
     </div>
 
-  </section><!-- End Features Section -->
+  </section>End Features Section -->
 
   <!-- ======= Services Section ======= -->
-  <section id="Testimonials" class="Testimonials" style="height: 60vh;">
+  <!-- <section id="Testimonials" class="Testimonials " style="height: 60vh;">
 
     <div class="container" data-aos="fade-up">
 
@@ -851,188 +1166,120 @@
       </header>
 
       <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="20"
-        slides-per-view="auto" style="height: 300px;">
-        <swiper-slide class="gy-4 d-flex justify-content-center">
+        slides-per-view="1" style="height: 300px;" pegination-type="fraction">
+        <swiper-slide class="gy-4 d-flex flex-row justify-content-center">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="test-box" style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(142, 154, 222, 0.686) ; max-width:600px;">
-  
-             <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
-              <img src="trads.jfif"  style="border-radius: 50%; width: 70px; border: 5px solid rgba(127, 142, 228, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">            
-              <h3>Nesciunt Mete</h3>
-              <i class="fa-solid fa-quote-right" style="font-size: 60px; color: rgba(187, 204, 238, 0.422);"></i>
-             </div>
-              <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
+            <div class="test-box">
+
+              <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
+                <img src="trads.jfif">
+                <h3>Nesciunt Mete</h3>
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <p>"Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
+                perferendis
                 tempore et consequatur."</p>
-             
-              <div class="social" style="color: rgba(95, 144, 227, 0.759); display: flex; justify-content: left;margin-left: 50px;">
-                <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2" ></i> <i class="fa-brands fa-linkedin-in m-2"></i>
+
+              <div class="social">
+                <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2"></i> <i
+                  class="fa-brands fa-linkedin-in m-2"></i>
               </div>
             </div>
           </div>
-  
+
         </swiper-slide>
-      <swiper-slide class="gy-4 d-flex justify-content-center">
+        <swiper-slide class=" gy-4 d-flex justify-content-center">
 
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="test-box" style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(142, 154, 222, 0.686) ; max-width:600px;">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="test-box"
+              style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(142, 154, 222, 0.686) ; width: 500px;">
 
-           <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
-            <img src="trads.jfif"  style="border-radius: 50%; width: 70px; border: 5px solid rgba(127, 142, 228, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">            
-            <h3>Nesciunt Mete</h3>
-            <i class="fa-solid fa-quote-right" style="font-size: 60px; color: rgba(187, 204, 238, 0.422);"></i>
-           </div>
-            <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
-              tempore et consequatur."</p>
-           
-            <div class="social" style="color: rgba(95, 144, 227, 0.759); display: flex; justify-content: left;margin-left: 50px;">
-              <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2" ></i> <i class="fa-brands fa-linkedin-in m-2"></i>
+              <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
+                <img src="trads.jfif"
+                  style="border-radius: 50%; width: 70px; border: 5px solid rgba(127, 142, 228, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
+                <h3>Nesciunt Mete</h3>
+                <i class="fa-solid fa-quote-right" style="font-size: 60px; color: rgba(187, 204, 238, 0.422);"></i>
+              </div>
+              <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos accusantium
+                minus dolores iure perferendis
+                tempore et consequatur."</p>
+
+              <div class="social"
+                style="color: rgba(95, 144, 227, 0.759); display: flex; justify-content: left;margin-left: 50px;">
+                <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2"></i> <i
+                  class="fa-brands fa-linkedin-in m-2"></i>
+              </div>
             </div>
           </div>
-        </div>
 
-      </swiper-slide>
-      <swiper-slide class="gy-4 d-flex justify-content-center">
+        </swiper-slide>
+        <swiper-slide class=" gy-4 d-flex justify-content-center">
 
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="test-box" style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(142, 154, 222, 0.686) ; max-width:600px;">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="test-box"
+              style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(142, 154, 222, 0.686) ; width: 500px;">
 
-           <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
-            <img src="trads.jfif"  style="border-radius: 50%; width: 70px; border: 5px solid rgba(127, 142, 228, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">            
-            <h3>Nesciunt Mete</h3>
-            <i class="fa-solid fa-quote-right" style="font-size: 60px; color: rgba(187, 204, 238, 0.422);"></i>
-           </div>
-            <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
-              tempore et consequatur."</p>
-           
-            <div class="social" style="color: rgba(95, 144, 227, 0.759); display: flex; justify-content: left;margin-left: 50px;">
-              <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2" ></i> <i class="fa-brands fa-linkedin-in m-2"></i>
+              <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
+                <img src="trads.jfif"
+                  style="border-radius: 50%; width: 70px; border: 5px solid rgba(127, 142, 228, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
+                <h3>Nesciunt Mete</h3>
+                <i class="fa-solid fa-quote-right" style="font-size: 60px; color: rgba(187, 204, 238, 0.422);"></i>
+              </div>
+              <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos accusantium
+                minus dolores iure perferendis
+                tempore et consequatur."</p>
+
+              <div class="social"
+                style="color: rgba(95, 144, 227, 0.759); display: flex; justify-content: left;margin-left: 50px;">
+                <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2"></i> <i
+                  class="fa-brands fa-linkedin-in m-2"></i>
+              </div>
             </div>
           </div>
-        </div>
 
-      </swiper-slide>
-      <swiper-slide class="gy-4 d-flex justify-content-center">
+        </swiper-slide>
+        <swiper-slide class=" gy-4 d-flex justify-content-center">
 
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="test-box" style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(142, 154, 222, 0.686) ; max-width:600px;">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="test-box"
+              style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(142, 154, 222, 0.686) ; width: 500px;">
 
-           <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
-            <img src="trads.jfif"  style="border-radius: 50%; width: 70px; border: 5px solid rgba(127, 142, 228, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">            
-            <h3>Nesciunt Mete</h3>
-            <i class="fa-solid fa-quote-right" style="font-size: 60px; color: rgba(187, 204, 238, 0.422);"></i>
-           </div>
-            <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
-              tempore et consequatur."</p>
-           
-            <div class="social" style="color: rgba(95, 144, 227, 0.759); display: flex; justify-content: left;margin-left: 50px;">
-              <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2" ></i> <i class="fa-brands fa-linkedin-in m-2"></i>
+              <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
+                <img src="trads.jfif"
+                  style="border-radius: 50%; width: 70px; border: 5px solid rgba(127, 142, 228, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
+                <h3>Nesciunt Mete</h3>
+                <i class="fa-solid fa-quote-right" style="font-size: 60px; color: rgba(187, 204, 238, 0.422);"></i>
+              </div>
+              <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos accusantium
+                minus dolores iure perferendis
+                tempore et consequatur."</p>
+
+              <div class="social"
+                style="color: rgba(95, 144, 227, 0.759); display: flex; justify-content: left;margin-left: 50px;">
+                <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2"></i> <i
+                  class="fa-brands fa-linkedin-in m-2"></i>
+              </div>
             </div>
           </div>
-        </div>
 
-      </swiper-slide>
-     
+        </swiper-slide>
+
       </swiper-container>
-
-
-    </div>
-
-  </section><!-- End Services Section -->
-
-  <!-- ======= Pricing Section ======= -->
-  <section id="pricing" class="pricing">
-    <!-- <img src="bg-overlay-home1.png" alt="">   -->
-    <img src="shape2-home1.png" alt="">
-    <div class="container" data-aos="fade-up">
-
-      <header class="section-header">
-        <h2>Get Price</h2>
-        <p>Check our Pricing</p>
-      </header>
-
-      <div class="row gy-4" data-aos="fade-left">
-
-
-        <div class="col-md-4 sm-p-b60">
-          <div class="ot-pricing-table bg-shape s1">
-            <span class="title-table">Standard</span>
-            <div class="inner-table">
-              <img src="price1.png" class="pr-icon1" alt="Standard">
-              <h2><sup>$</sup> 69.99</h2>
-              <p>Monthly Package</p>
-              <div class="details">
-                <ul>
-                  <li>Social Media Marketing</li>
-                  <li>2.100 Keywords</li>
-                  <li>One Way Link Building</li>
-                  <li>5 Free Optimization</li>
-                  <li>3 Press Releases</li>
-                </ul>
-              </div>
-            </div>
-            <a href="#" class="octf-btn octf-btn-icon octf-btn-secondary">Choose Plane <i
-                class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="col-md-4 sm-p-b60">
-          <div class="ot-pricing-table bg-shape s2">
-            <span class="title-table">Economy</span>
-            <div class="inner-table">
-              <img src="price2-1.png" class="pr-icon2" alt="Economy">
-              <h2><sup>$</sup> 79.99</h2>
-              <p>Monthly Package</p>
-              <div class="details">
-                <ul>
-                  <li>Social Media Marketing</li>
-                  <li>3.100 Keywords</li>
-                  <li>One Way Link Building</li>
-                  <li>10 Free Optimization</li>
-                  <li>5 Press Releases</li>
-                </ul>
-              </div>
-            </div>
-            <a href="#" class="octf-btn octf-btn-icon octf-btn-third">Choose Plane <i
-                class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="ot-pricing-table bg-shape s3">
-            <span class="title-table">Executive</span>
-            <div class="inner-table">
-              <img src="price3-1.png" class="pr-icon3" alt="Executive">
-              <h2><sup>$</sup> 89.99</h2>
-              <p>Monthly Package</p>
-              <div class="details">
-                <ul>
-                  <li>Social Media Marketing</li>
-                  <li>5.100 Keywords</li>
-                  <li>One Way Link Building</li>
-                  <li>15 Free Optimization</li>
-                  <li>10 Press Releases</li>
-                </ul>
-              </div>
-            </div>
-            <a href="#" class="octf-btn octf-btn-icon octf-btn-primary">Choose Plane <i
-                class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-       </div>
+      
 
     </div>
 
-  </section><!-- End Pricing Section -->
-
+  </section>End Services Section -->
 
   <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
+  <!-- <section id="portfolio" class="portfolio ">
 
     <div class="container" data-aos="fade-up">
 
       <header class="section-header">
         <h2>Portfolio</h2>
-        <p>Check our latest work</p>
+        <p>Check our <span>latest</span> work</p>
       </header>
 
       <div class="portfolio-menu">
@@ -1048,7 +1295,7 @@
         <div class="item web">
           <img src="ppc.jpg" width="130" height="130" alt="">
           <h2 class="text-center">web</h2>
-           
+
         </div>
         <div class="item web">
           <img src="oad.jpg" width="130" height="130" alt="">
@@ -1089,336 +1336,171 @@
         <div class="item web">
           <img src="ppc.jpg" width="130" height="130" alt="">
           <h2 class="text-center">web</h2>
-           
+
         </div>
 
       </div>
 
     </div>
- 
 
-  </section><!-- End Portfolio Section -->
+
+  </section>End Portfolio Section -->
 
 
 
   <!-- ======= Team Section ======= -->
   <section id="Team" class="team">
     <div class="container" data-aos="fade-up">
-      
+
       <header class="section-header">
         <h2>Team</h2>
         <p>Our hard working team</p>
       </header>
 
-      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="20"
-        slides-per-view="auto" style="height: 300px;">
-        <swiper-slide class="gy-4 d-flex justify-content-center">
+          <div class="swiper mySwiper slider2">
+            <div class="swiper-wrapper gy-4">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="test-box" style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(142, 154, 222, 0.686) ; max-width:600px;">
-  
-             <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
-              <img src="trads.jfif"  style="border-radius: 50%; width: 70px; border: 5px solid rgba(127, 142, 228, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">            
-              <h3>Nesciunt Mete</h3>
-              <i class="fa-solid fa-quote-right" style="font-size: 60px; color: rgba(187, 204, 238, 0.422);"></i>
-             </div>
-              <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
-                tempore et consequatur."</p>
-             
-              <div class="social" style="color: rgba(95, 144, 227, 0.759); display: flex; justify-content: left;margin-left: 50px;">
-                <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2" ></i> <i class="fa-brands fa-linkedin-in m-2"></i>
+              <div class="swiper-slide" style="height: auto;">
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="test-box"
+                    style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(34, 58, 192, 0.686) ; width: 500px;">
+
+                    <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
+                      <img src="trads.jfif"
+                        style="border-radius: 50%; width: 70px; border: 5px solid rgba(34, 58, 192, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
+                      <h3>Nesciunt Mete</h3>
+                      <i class="fa-solid fa-quote-right"
+                        style="font-size: 60px; color: rgba(34, 58, 192, 0.686) ;"></i>
+                    </div>
+                    <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos
+                      accusantium
+                      minus dolores iure perferendis
+                      tempore et consequatur."</p>
+
+                    <div class="social"
+                      style="color: rgba(34, 58, 192, 0.686) ; display: flex; justify-content: left;margin-left: 50px;">
+                      <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2"></i> <i
+                        class="fa-brands fa-linkedin-in m-2"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+              <div class="swiper-slide" style="height: auto;">
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="test-box"
+                    style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(34, 58, 192, 0.686) ; width: 500px;">
+
+                    <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
+                      <img src="trads.jfif"
+                        style="border-radius: 50%; width: 70px; border: 5px solid rgba(34, 58, 192, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
+                      <h3>Nesciunt Mete</h3>
+                      <i class="fa-solid fa-quote-right"
+                        style="font-size: 60px; color: rgba(34, 58, 192, 0.686) ;"></i>
+                    </div>
+                    <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos
+                      accusantium
+                      minus dolores iure perferendis
+                      tempore et consequatur."</p>
+
+                    <div class="social"
+                      style="color: rgba(34, 58, 192, 0.686) ; display: flex; justify-content: left;margin-left: 50px;">
+                      <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2"></i> <i
+                        class="fa-brands fa-linkedin-in m-2"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="height: auto;">
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="test-box"
+                    style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(34, 58, 192, 0.686) ; width: 500px;">
+
+                    <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
+                      <img src="trads.jfif"
+                        style="border-radius: 50%; width: 70px; border: 5px solid rgba(34, 58, 192, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
+                      <h3>Nesciunt Mete</h3>
+                      <i class="fa-solid fa-quote-right"
+                        style="font-size: 60px; color: rgba(34, 58, 192, 0.686) ;"></i>
+                    </div>
+                    <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos
+                      accusantium
+                      minus dolores iure perferendis
+                      tempore et consequatur."</p>
+
+                    <div class="social"
+                      style="color: rgba(34, 58, 192, 0.686) ; display: flex; justify-content: left;margin-left: 50px;">
+                      <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2"></i> <i
+                        class="fa-brands fa-linkedin-in m-2"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="height: auto;">
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="test-box"
+                    style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(34, 58, 192, 0.686) ; width: 500px;">
+
+                    <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
+                      <img src="trads.jfif"
+                        style="border-radius: 50%; width: 70px; border: 5px solid rgba(34, 58, 192, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
+                      <h3>Nesciunt Mete</h3>
+                      <i class="fa-solid fa-quote-right"
+                        style="font-size: 60px; color: rgba(34, 58, 192, 0.686) ;"></i>
+                    </div>
+                    <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos
+                      accusantium
+                      minus dolores iure perferendis
+                      tempore et consequatur."</p>
+
+                    <div class="social"
+                      style="color: rgba(34, 58, 192, 0.686) ; display: flex; justify-content: left;margin-left: 50px;">
+                      <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2"></i> <i
+                        class="fa-brands fa-linkedin-in m-2"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide" style="height: auto;">
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="test-box"
+                    style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(34, 58, 192, 0.686) ; width: 500px;">
+
+                    <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
+                      <img src="trads.jfif"
+                        style="border-radius: 50%; width: 70px; border: 5px solid rgba(34, 58, 192, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
+                      <h3>Nesciunt Mete</h3>
+                      <i class="fa-solid fa-quote-right"
+                        style="font-size: 60px; color: rgba(34, 58, 192, 0.686) ;"></i>
+                    </div>
+                    <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos
+                      accusantium
+                      minus dolores iure perferendis
+                      tempore et consequatur."</p>
+
+                    <div class="social"
+                      style="color: rgba(34, 58, 192, 0.686) ; display: flex; justify-content: left;margin-left: 50px;">
+                      <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2"></i> <i
+                        class="fa-brands fa-linkedin-in m-2"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+              </div>
+
   
-        </swiper-slide>
-      <swiper-slide class="gy-4 d-flex justify-content-center">
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="test-box" style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(142, 154, 222, 0.686) ; max-width:600px;">
-
-           <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
-            <img src="trads.jfif"  style="border-radius: 50%; width: 70px; border: 5px solid rgba(127, 142, 228, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">            
-            <h3>Nesciunt Mete</h3>
-            <i class="fa-solid fa-quote-right" style="font-size: 60px; color: rgba(187, 204, 238, 0.422);"></i>
-           </div>
-            <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
-              tempore et consequatur."</p>
-           
-            <div class="social" style="color: rgba(95, 144, 227, 0.759); display: flex; justify-content: left;margin-left: 50px;">
-              <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2" ></i> <i class="fa-brands fa-linkedin-in m-2"></i>
-            </div>
           </div>
-        </div>
-
-      </swiper-slide>
-      <swiper-slide class="gy-4 d-flex justify-content-center">
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="test-box" style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(142, 154, 222, 0.686) ; max-width:600px;">
-
-           <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
-            <img src="trads.jfif"  style="border-radius: 50%; width: 70px; border: 5px solid rgba(127, 142, 228, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">            
-            <h3>Nesciunt Mete</h3>
-            <i class="fa-solid fa-quote-right" style="font-size: 60px; color: rgba(187, 204, 238, 0.422);"></i>
-           </div>
-            <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
-              tempore et consequatur."</p>
-           
-            <div class="social" style="color: rgba(95, 144, 227, 0.759); display: flex; justify-content: left;margin-left: 50px;">
-              <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2" ></i> <i class="fa-brands fa-linkedin-in m-2"></i>
-            </div>
-          </div>
-        </div>
-
-      </swiper-slide>
-      <swiper-slide class="gy-4 d-flex justify-content-center">
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="test-box" style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(142, 154, 222, 0.686) ; max-width:600px;">
-
-           <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
-            <img src="trads.jfif"  style="border-radius: 50%; width: 70px; border: 5px solid rgba(127, 142, 228, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">            
-            <h3>Nesciunt Mete</h3>
-            <i class="fa-solid fa-quote-right" style="font-size: 60px; color: rgba(187, 204, 238, 0.422);"></i>
-           </div>
-            <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
-              tempore et consequatur."</p>
-           
-            <div class="social" style="color: rgba(95, 144, 227, 0.759); display: flex; justify-content: left;margin-left: 50px;">
-              <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2" ></i> <i class="fa-brands fa-linkedin-in m-2"></i>
-            </div>
-          </div>
-        </div>
-
-      </swiper-slide>
-     
-      </swiper-container>
-
-
-    </div>
 
   </section><!-- End Team Section -->
 
 
 
-   <!-- ======= F.A.Q Section ======= -->
-   <section id="faq" class="faq">
-
-    <div class="container" data-aos="fade-up">
-
-      <header class="section-header">
-        <h2>F.A.Q</h2>
-        <p>Frequently Asked Questions</p>
-      </header>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <!-- F.A.Q List 1-->
-          <div class="accordion accordion-flush" id="faqlist1">
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq-content-1">
-                  Non consectetur a erat nam at lectus urna duis?
-                </button>
-              </h3>
-              <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-                <div class="accordion-body">
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
-                  gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq-content-2">
-                  Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
-                </button>
-              </h3>
-              <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-                <div class="accordion-body">
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
-                  donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
-                  elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq-content-3">
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
-                </button>
-              </h3>
-              <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-                <div class="accordion-body">
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
-                  elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
-                  eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis
-                  sed odio morbi quis
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-
-          <!-- F.A.Q List 2-->
-          <div class="accordion accordion-flush" id="faqlist2">
-
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq2-content-1">
-                  Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
-                </button>
-              </h3>
-              <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-                <div class="accordion-body">
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
-                  donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
-                  elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq2-content-2">
-                  Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
-                </button>
-              </h3>
-              <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-                <div class="accordion-body">
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in.
-                  Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.
-                  Purus gravida quis blandit turpis cursus in
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq2-content-3">
-                  Varius vel pharetra vel turpis nunc eget lorem dolor?
-                </button>
-              </h3>
-              <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-                <div class="accordion-body">
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada
-                  nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut
-                  venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas
-                  egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section><!-- End F.A.Q Section -->
-  
-
-  <!-- ======= Contact Section ======= -->
-  <section id="Contact" class="contact">
-
-    <div class="container" data-aos="fade-up">
-
-      <header class="section-header">
-        <h2>Contact</h2>
-        <p>Get In Touch</p>
-      </header>
-
-      <div class="row gy-4">
-
-        <div class="col-lg-6 upper_details">
-
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <div class="info-box">
-                <i class="bi bi-geo-alt"></i>
-                <h3>Address</h3>
-                <p>A108 Adam Street,<br>New York, NY 535022</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="info-box">
-                <i class="bi bi-telephone"></i>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="info-box">
-                <i class="bi bi-envelope"></i>
-                <h3>Email Us</h3>
-                <p>info@example.com<br>contact@example.com</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="info-box">
-                <i class="bi bi-clock"></i>
-                <h3>Open Hours</h3>
-                <p>Monday - Friday<br>9:00AM - 05:00PM</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-6">
-          <form action="forms/contact.php" method="post" class="php-email-form">
-            <div class="row gy-4">
-
-              <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-              </div>
-
-              <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-              </div>
-
-              <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-              </div>
-
-              <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-              </div>
-
-              <div class="col-md-12 text-center sm">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-                
-                <span><button type="submit" class="octf-btn">Send Message
-                  <i class="fa-solid fa-mail-forward"></i>
-
-                </button></span>
-              </div>
-
-            </div>
-          </form>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section><!-- End Contact Section -->
+  <!-- ======= F.A.Q Section ======= -->
+  <!-- End Contact Section -->
 
   <!-- End #main -->
 
@@ -1429,8 +1511,8 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <h4 style="color: #f61677;">Our Newsletter</h4>
+            <p style="color: #fff;">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
           </div>
           <div class="col-lg-6">
             <form action="" method="post">
@@ -1446,8 +1528,9 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
-              <span>CW_media</span>
+              <span></span>
+              <img src="lt.PNG" alt="">
+
             </a>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
               darta donna mare fermentum iaculis eu non diam phasellus.</p>
@@ -1503,10 +1586,6 @@
         &copy; Copyright <strong><span>CW media</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
         Designed by <a href="#">Akhil Muduli</a>
       </div>
     </div>
@@ -1522,21 +1601,25 @@
 
   <!-- counter -->
   <script>
-		!function (e) { var t = {}; function n(r) { if (t[r]) return t[r].exports; var a = t[r] = { i: r, l: !1, exports: {} }; return e[r].call(a.exports, a, a.exports, n), a.l = !0, a.exports } n.m = e, n.c = t, n.d = function (e, t, r) { n.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r }) }, n.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, n.t = function (e, t) { if (1 & t && (e = n(e)), 8 & t) return e; if (4 & t && "object" == typeof e && e && e.__esModule) return e; var r = Object.create(null); if (n.r(r), Object.defineProperty(r, "default", { enumerable: !0, value: e }), 2 & t && "string" != typeof e) for (var a in e) n.d(r, a, function (t) { return e[t] }.bind(null, a)); return r }, n.n = function (e) { var t = e && e.__esModule ? function () { return e.default } : function () { return e }; return n.d(t, "a", t), t }, n.o = function (e, t) { return Object.prototype.hasOwnProperty.call(e, t) }, n.p = "/", n(n.s = 2) }([, , function (e, t, n) { e.exports = n(3) }, function (e, t, n) { "use strict"; function r(e, t) { for (var n = 0; n < t.length; n++) { var r = t[n]; r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r) } } n.r(t); new (function () { function e() { !function (e, t) { if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function") }(this, e), this.registerEventListeners() } var t, n, a; return t = e, (n = [{ key: "registerEventListeners", value: function () { var e = this, t = document.querySelectorAll(".purecounter"); if (this.intersectionListenerSupported()) for (var n = new IntersectionObserver(this.animateElements.bind(this), { root: null, rootMargin: "20px", threshold: .5 }), r = 0; r < t.length; r++)n.observe(t[r]); else window.addEventListener && (this.animateLegacy(t), window.addEventListener("scroll", function (n) { e.animateLegacy(t) }, { passive: !0 })) } }, { key: "animateLegacy", value: function (e) { for (var t = 0; t < e.length; t++) { !0 === this.parseConfig(e[t]).legacy && this.elementIsInView(e[t]) && this.animateElements([e[t]]) } } }, { key: "animateElements", value: function (e, t) { var n = this; e.forEach(function (e) { var r = void 0 !== e.target ? n.parseConfig(e.target) : n.parseConfig(e); return r.duration <= 0 ? e.innerHTML = r.end.toFixed(r.decimals) : !t && !n.elementIsInView(e) || t && e.intersectionRatio < .5 ? e.target.innerHTML = r.start > r.end ? r.end : r.start : void setTimeout(function () { return void 0 !== e.target ? n.startCounter(e.target, r) : n.startCounter(e, r) }, r.delay) }) } }, { key: "startCounter", value: function (e, t) { var n = this, r = (t.end - t.start) / (t.duration / t.delay), a = "inc"; t.start > t.end && (a = "dec", r *= -1), r < 1 && t.decimals <= 0 && (r = 1); var i = t.decimals <= 0 ? parseInt(t.start) : parseFloat(t.start).toFixed(t.decimals); e.innerHTML = i, !0 === t.once && e.setAttribute("data-purecounter-duration", 0); var o = setInterval(function () { var s = n.nextNumber(i, r, t, a); e.innerHTML = n.formatNumber(s, t), ((i = s) >= t.end && "inc" == a || i <= t.end && "dec" == a) && (clearInterval(o), i != t.end && (e.innerHTML = t.decimals <= 0 ? parseInt(t.end) : parseFloat(t.end).toFixed(t.decimals))) }, t.delay) } }, { key: "parseConfig", value: function (e) { for (var t = [].filter.call(e.attributes, function (e) { return /^data-purecounter-/.test(e.name) }), n = { start: 0, end: 9001, duration: 2e3, delay: 10, once: !0, decimals: 0, legacy: !0 }, r = 0; r < t.length; r++) { var a = t[r].name.replace("data-purecounter-", ""); n[a.toLowerCase()] = "duration" == a.toLowerCase() ? parseInt(1e3 * this.castDataType(t[r].value)) : this.castDataType(t[r].value) } return n } }, { key: "nextNumber", value: function (e, t, n, r) { return r || (r = "inc"), "inc" === r ? n.decimals <= 0 ? parseInt(e) + parseInt(t) : parseFloat(e) + parseFloat(t) : n.decimals <= 0 ? parseInt(e) - parseInt(t) : parseFloat(e) - parseFloat(t) } }, { key: "formatNumber", value: function (e, t) { return t.decimals <= 0 ? parseInt(e) : e.toLocaleString(void 0, { minimumFractionDigits: t.decimals, maximumFractionDigits: t.decimals }) } }, { key: "castDataType", value: function (e) { return /^[0-9]+\.[0-9]+$/.test(e) ? parseFloat(e) : /^[0-9]+$/.test(e) ? parseInt(e) : e } }, { key: "elementIsInView", value: function (e) { for (var t = e.offsetTop, n = e.offsetLeft, r = e.offsetWidth, a = e.offsetHeight; e.offsetParent;)t += (e = e.offsetParent).offsetTop, n += e.offsetLeft; return t >= window.pageYOffset && n >= window.pageXOffset && t + a <= window.pageYOffset + window.innerHeight && n + r <= window.pageXOffset + window.innerWidth } }, { key: "intersectionListenerSupported", value: function () { return "IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype } }]) && r(t.prototype, n), a && r(t, a), e }()) }]);
-	</script>
+    !function (e) { var t = {}; function n(r) { if (t[r]) return t[r].exports; var a = t[r] = { i: r, l: !1, exports: {} }; return e[r].call(a.exports, a, a.exports, n), a.l = !0, a.exports } n.m = e, n.c = t, n.d = function (e, t, r) { n.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r }) }, n.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, n.t = function (e, t) { if (1 & t && (e = n(e)), 8 & t) return e; if (4 & t && "object" == typeof e && e && e.__esModule) return e; var r = Object.create(null); if (n.r(r), Object.defineProperty(r, "default", { enumerable: !0, value: e }), 2 & t && "string" != typeof e) for (var a in e) n.d(r, a, function (t) { return e[t] }.bind(null, a)); return r }, n.n = function (e) { var t = e && e.__esModule ? function () { return e.default } : function () { return e }; return n.d(t, "a", t), t }, n.o = function (e, t) { return Object.prototype.hasOwnProperty.call(e, t) }, n.p = "/", n(n.s = 2) }([, , function (e, t, n) { e.exports = n(3) }, function (e, t, n) { "use strict"; function r(e, t) { for (var n = 0; n < t.length; n++) { var r = t[n]; r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r) } } n.r(t); new (function () { function e() { !function (e, t) { if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function") }(this, e), this.registerEventListeners() } var t, n, a; return t = e, (n = [{ key: "registerEventListeners", value: function () { var e = this, t = document.querySelectorAll(".purecounter"); if (this.intersectionListenerSupported()) for (var n = new IntersectionObserver(this.animateElements.bind(this), { root: null, rootMargin: "20px", threshold: .5 }), r = 0; r < t.length; r++)n.observe(t[r]); else window.addEventListener && (this.animateLegacy(t), window.addEventListener("scroll", function (n) { e.animateLegacy(t) }, { passive: !0 })) } }, { key: "animateLegacy", value: function (e) { for (var t = 0; t < e.length; t++) { !0 === this.parseConfig(e[t]).legacy && this.elementIsInView(e[t]) && this.animateElements([e[t]]) } } }, { key: "animateElements", value: function (e, t) { var n = this; e.forEach(function (e) { var r = void 0 !== e.target ? n.parseConfig(e.target) : n.parseConfig(e); return r.duration <= 0 ? e.innerHTML = r.end.toFixed(r.decimals) : !t && !n.elementIsInView(e) || t && e.intersectionRatio < .5 ? e.target.innerHTML = r.start > r.end ? r.end : r.start : void setTimeout(function () { return void 0 !== e.target ? n.startCounter(e.target, r) : n.startCounter(e, r) }, r.delay) }) } }, { key: "startCounter", value: function (e, t) { var n = this, r = (t.end - t.start) / (t.duration / t.delay), a = "inc"; t.start > t.end && (a = "dec", r *= -1), r < 1 && t.decimals <= 0 && (r = 1); var i = t.decimals <= 0 ? parseInt(t.start) : parseFloat(t.start).toFixed(t.decimals); e.innerHTML = i, !0 === t.once && e.setAttribute("data-purecounter-duration", 0); var o = setInterval(function () { var s = n.nextNumber(i, r, t, a); e.innerHTML = n.formatNumber(s, t), ((i = s) >= t.end && "inc" == a || i <= t.end && "dec" == a) && (clearInterval(o), i != t.end && (e.innerHTML = t.decimals <= 0 ? parseInt(t.end) : parseFloat(t.end).toFixed(t.decimals))) }, t.delay) } }, { key: "parseConfig", value: function (e) { for (var t = [].filter.call(e.attributes, function (e) { return /^data-purecounter-/.test(e.name) }), n = { start: 0, end: 9001, duration: 2e3, delay: 10, once: !0, decimals: 0, legacy: !0 }, r = 0; r < t.length; r++) { var a = t[r].name.replace("data-purecounter-", ""); n[a.toLowerCase()] = "duration" == a.toLowerCase() ? parseInt(1e3 * this.castDataType(t[r].value)) : this.castDataType(t[r].value) } return n } }, { key: "nextNumber", value: function (e, t, n, r) { return r || (r = "inc"), "inc" === r ? n.decimals <= 0 ? parseInt(e) + parseInt(t) : parseFloat(e) + parseFloat(t) : n.decimals <= 0 ? parseInt(e) - parseInt(t) : parseFloat(e) - parseFloat(t) } }, { key: "formatNumber", value: function (e, t) { return t.decimals <= 0 ? parseInt(e) : e.toLocaleString(void 0, { minimumFractionDigits: t.decimals, maximumFractionDigits: t.decimals }) } }, { key: "castDataType", value: function (e) { return /^[0-9]+\.[0-9]+$/.test(e) ? parseFloat(e) : /^[0-9]+$/.test(e) ? parseInt(e) : e } }, { key: "elementIsInView", value: function (e) { for (var t = e.offsetTop, n = e.offsetLeft, r = e.offsetWidth, a = e.offsetHeight; e.offsetParent;)t += (e = e.offsetParent).offsetTop, n += e.offsetLeft; return t >= window.pageYOffset && n >= window.pageXOffset && t + a <= window.pageYOffset + window.innerHeight && n + r <= window.pageXOffset + window.innerWidth } }, { key: "intersectionListenerSupported", value: function () { return "IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype } }]) && r(t.prototype, n), a && r(t, a), e }()) }]);
+  </script>
 
 
 
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
 
   <!-- Template Main JS File -->
   <script src="main.js"></script>
 
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <script>
     $('.portfolio-item').isotope({
@@ -1545,74 +1628,152 @@
       layoutMode: 'fitRows'
     });
 
-    $('.portfolio-menu ul li').click(function(){
+    $('.portfolio-menu ul li').click(function () {
       $('.portfolio-menu ul li').removeClass('f-active');
       $(this).addClass('f-active')
 
       var selector = $(this).attr('data-filter');
       $('.portfolio-item').isotope({
-        filter:selector
+        filter: selector
       })
       return false;
     })
 
   </script>
 
-	<!-- our aos data -->
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
+
+  <!-- our aos data -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+  <script>
+    function scrollToPort() {
+      var height = $('body').height();
+      $('html, body').animate({
+        scrollTop: $('#portfolio').offset().top
+      }, 500);
+    }
+    function scrollToService() {
+      $('html, body').animate({
+        scrollTop: $('#Services').offset().top
+      }, 500);
+    }
+
+    function scrollToContact() {
+      $('html, body').animate({
+        scrollTop: $('#Contact').offset().top
+      }, 500);
+    }
+
+    function scrollToTop() {
+      var height = $('body').height();
+      $('html, body').animate({
+        scrollTop: height
+      }, 500);
+
+    }
 
 
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
-<script>
-function scrollToPort(){
-  var height = $('body').height();
-	$('html, body').animate({
-    scrollTop: $('#portfolio').offset().top
-    }, 500);
-}
-function scrollToService(){
-	$('html, body').animate({
-         scrollTop: $('#Services').offset().top
-    }, 500);
-}
+    function ScaleOnScroll() {
+      var height = $('body').height();
+      $('html, body').animate({
+        scrollTop: $('#pricing').offset().top
+      }, 500);
+    }
 
-function scrollToContact(){
-	$('html, body').animate({
-         scrollTop: $('#Contact').offset().top
-    }, 500);
-}
+  </script>
 
-function scrollToTop(){
-  var height = $('body').height();
-	$('html, body').animate({
-         scrollTop: height
-    }, 500);
-
-}
-function scrollToPricing(){
-  var height = $('body').height();
-	$('html, body').animate({
-    scrollTop: $('#pricing').offset().top
-    }, 500);
-
-}
-</script>
+  <script>
+    //  var swiper = new Swiper(".mySwiper", {
+    //       slidesPerView: 3,
+    //       spaceBetween: 30,
+    //       pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true,
+    //         loop: true,
+    //       },
+    //       navigation: {
+    //         nextEl: ".swiper-button-next",
+    //         prevEl: ".swiper-button-prev",
+    //       },
+    //     });
 
 
-<script>
-  $(document).ready(function(){
-    $('.fa-bars').click(function(){
-      $('.fa-bars').toggleClass('toggle')
-      $('.navbar').toggleClass('navbar-mobile')
+    const swiper = new Swiper('.slider', {
+      // Optional parameters
+      slidesPerView: 4,
+      spaceBetween: 30,
+      direction: 'horizontal',
+      loop: true,
 
-      $('.mobile-nav-toggle').toggleClass('fa-solid fa-bars fa-solid fa-xmark')
-    })
-  })
-</script>
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        loop: true,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  // breakpoints: {
+  //   // when window width is >= 320px
+  //   320: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 20
+  //   },
+  //   // when window width is >= 480px
+  //   480: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 30
+  //   },
+  //   // when window width is >= 640px
+  //   640: {
+  //     slidesPerView: 4,
+  //     spaceBetween: 40
+  //   },
+  // },
+
+    });
+
+    const swiper2 = new Swiper('.slider2', {
+      // Optional parameters
+      slidesPerView: 2,
+      spaceBetween: 200,
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        loop: true,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 </body>
 
