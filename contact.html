@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+</head>
+<style>
+  
+  /*--------------------------------------------------------------
+  # Contact
+  --------------------------------------------------------------*/
+  .contact .info-box {
+    color: #444444;
+    background: #ffffff;
+    padding: 30px;
+  }
+  
+  .contact .info-box i {
+    font-size: 38px;
+    line-height: 0;
+    color: #252d87;
+  }
+  
+  .contact .info-box h3 {
+    font-size: 20px;
+    color: #ffff;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+  }
+  
+  .contact .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .contact .php-email-form {
+    background: #ffffff;
+    padding: 30px;
+    height: 100%;
+  }
+  
+  .contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+  }
+  
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact .php-email-form input, .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+  }
+  
+  .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+    border-color: #4154f1;
+  }
+  
+  .contact .php-email-form input {
+    padding: 10px 15px;
+  }
+  
+  .contact .php-email-form textarea {
+    padding: 12px 15px;
+  }
+  
+ .sm i{
+    margin-left: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  .contact .php-email-form button[type="submit"] {
+    background:#15171c;;    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+
+  }
+  
+  .contact .php-email-form button[type="submit"]:hover {
+    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+    /* background-image: linear-gradient(to right top, #4226c9, #363dd3, #2a50db, #2261e2, #2370e7, #2670e8, #2871ea, #2b71eb, #3262e8, #3f51e2, #4e3cdb, #5d1fd1); */
+  }
+  
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .cont-container{
+    display: flex !;
+  }
+
+    /* back to top */
+  
+#mybtn{
+	/* display: none; */
+	position: fixed;
+	padding: 10px;
+	border-radius: 50px;
+	bottom: 20px;
+	right: 40px;
+	z-index: 99;
+	border: none;
+	color: #ffffff;
+	background: rgba(85, 32, 201, 0.8);
+}
+
+#mybtn:hover{
+	background:#606060;
+}
+
+@media (max-width:768px) {
+  .upper_details{
+    display: none;
+  }
+}
+
+</style>
+<body>
+  
+    <!-- ======= Contact Section ======= -->
+    <section id="Contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+  
+        <eader class="section-header">
+          <h2>Contact</h2>
+          <p>Get In Touch</p>
+        </header>
+  
+        <div class="row gy-4">
+  
+          <div class="col-lg-6 upper_details">
+  
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>A108 Adam Street,<br>New York, NY 535022</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>info@example.com<br>contact@example.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+  
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+  
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+  
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+  
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+  
+                <div class="col-md-12 text-center sm">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+  
+                  <span><button type="submit" class="octf-btn">Send Message
+                      <i class="fa-solid fa-mail-forward"></i>
+  
+                    </button></span>
+                </div>
+  
+              </div>
+            </form>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </section><!-- End Contact Section -->
+
+    
+</body>
+</html>
