@@ -643,6 +643,11 @@
    padding: 0;
    overflow-x: hidden;
   }
+
+  .pricing .ot-pricing-table{
+    width: auto;
+    margin:0 20px !important;
+  }
  
  }
 @media (max-width: 425px)
@@ -1884,7 +1889,7 @@ label #cancel{
 
   }
  
-  @media (max-width:575px) {
+  @media (min-width:575px) {
 
     .ot-pricing-table {
       position: relative;
@@ -1898,12 +1903,6 @@ label #cancel{
       border-radius: 15px;
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
-      /* box-shadow: 8px 15px 30px 0px rgba(23, 42, 77, 0.432);
-      -webkit-box-shadow: 8px 15px 30px 0px rgba(29, 51, 93, 0.351);
-      -moz-box-shadow: 8px 15px 30px 0px rgba(34, 62, 112, 0.402); */
-      /* background: rgb(0, 0, 0); */
-      /* position: relative; */
-  
       background: rgba(172, 165, 165, 0.1);
       position: relative;
       border-radius: 15px;
@@ -1911,7 +1910,7 @@ label #cancel{
       backdrop-filter: blur(25px);
       -webkit-backdrop-filter: blur(25px);
       box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
-      z-index: 9999999999 !important;
+      z-index: 99999 !important;
       background-size: cover;
       margin: 40px;
       color: white;
@@ -1933,12 +1932,6 @@ label #cancel{
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
-    /* box-shadow: 8px 15px 30px 0px rgba(23, 42, 77, 0.432);
-    -webkit-box-shadow: 8px 15px 30px 0px rgba(29, 51, 93, 0.351);
-    -moz-box-shadow: 8px 15px 30px 0px rgba(34, 62, 112, 0.402); */
-    /* background: rgb(0, 0, 0); */
-    /* position: relative; */
-
     background: rgba(172, 165, 165, 0.1);
     position: relative;
     border-radius: 15px;
@@ -1951,7 +1944,7 @@ label #cancel{
     margin: 40px;
     color: white;
     box-shadow: 0 0 68px 8px rgba(49, 10, 225, 0.227) inset;
-
+    -moz-box-shadow: 0 0 68px 8px rgba(49, 10, 225, 0.227) inset;  
     
   }
   
