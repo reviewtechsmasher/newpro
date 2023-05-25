@@ -12,11 +12,10 @@
 
   <!-- Favicons -->
 
-
   <!-- Google Fonts -->
-  <link
+  <!-- <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    rel="stylesheet"> -->
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -24,13 +23,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
-  <!-- bootstrap cdn -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
 
+    
   <!-- Template Main CSS File -->
   <link href="style.css" rel="stylesheet">
 
@@ -39,6 +37,10 @@
   <!-- 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;600&family=PT+Sans&family=Poppins:wght@500&family=Roboto:wght@900&display=swap" rel="stylesheet">
   <!-- <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -49,7 +51,16 @@
   background:rgb(42, 42, 185);;;;  background-image: linear-gradient(to right top, #4226c9, #363dd3, #2a50db, #2261e2, #2370e7, #2670e8, #2871ea, #2b71eb, #3262e8, #3f51e2, #4e3cdb, #5d1fd1);
   ======================================================== -->
 </head>
+<style>
+  
+  *{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  p{
+    color: #fff !important;
+  }
 
+</style>
 
 <body>
 
@@ -62,12 +73,12 @@
   <header id="header" class="header bg-black">
     <div class=" navbar container container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="logo.PNG" class="lg img-fluid" width="130" height="130" alt="">
-        <img src="lt.PNG" class="mt-2 lt" width="300" alt="">
+      <a href="index.html" class="logo d-flex align-items-center my-lg-3">
+        <img src="logo.PNG" class="lg img-fluid" width="100" height="100" alt="">
+        <img src="lt.PNG" class="mt-3 lt" width="300" alt="">
 
-        <div class="icons d-flex align-content-center ">
-          <i class="fa-solid fa-location-dot m-2 text-white"></i>
+        <div class="icons d-flex align-content-center">
+          <i class="fa-solid fa-location-dot my-2 mx-2 text-white"></i>
           <h5 class="text-white">Gurgaon</h5>
         </div>
         <!-- <span><p class="c">Cloud</p></span><span><p class="f">Flix</p></span><span><p class="m"> Media</p></span> -->
@@ -87,13 +98,16 @@
 
     <input type="checkbox" id="check">
     <label for="check">
-      <i class="fa-solid fa-bars" id="btn"></i>
+      <i class="fa-solid fa-bars" style="font-size:25px;" id="btn"></i>
       <i class="fa-solid fa-times" id="cancel"></i>
     </label>
 
 
     <div class="slidebar">
       <div id="head">
+        <label for="check">
+          <i class="fa-solid fa-times" style="position: absolute; left: 195px; top: 16px;" id="cancel2"></i>
+        </label>
         <img src="logo.PNG" class="img-fluid" width="100" height="100" alt="">
 
       </div>
@@ -104,38 +118,38 @@
         <li><a href="#Contact"><i class="">Contact us</i></a></li>
       </ul>
 
-       <!-- <h2>Follow us on </h2>
-              <br>
-              <div class=" d-flex justify-content-center align-items-center" style="color: #fff; font-size: x-large;">
-              <i class="fa-brands fa-instagram mx-3"></i>
-              <i class="fa-brands fa-facebook mx-3"></i>
-              <i class="fa-brands fa-linkedin-in mx-3"></i>
-            </div> -->
     </div>
 
 
     <div class="lower-nav d-flex justify-content-center ">
-      <nav id="navbar" class="navbar align-content-center">
+      <nav id="navbar" class="navbar align-content-center d-flex justify-content-between">
         <ul>
-          <li class="dropdown"><a href="#hero"><span>Home</span><i class="fa-solid fa-angle-down"></i></a>
+          <li class="dropdown"><a href="#hero"><span>Home</span></a>
+           
+          </li>
+          <li class="dropdown nav-link scrollto"><a href="#Services" onClick="scrollToService()"><span>Services</span><i
+                class="fa-solid fa-angle-down"></i></a>
             <ul>
-              <li><a href="index-2.html">SEO Agency</a></li>
+              <li class="dropdown nav-link scrollto"><a href="content-marketing.html">online services</a>
+              <ul>
+                <li><a href="content-marketing.html">Content Marketing</a></li>
+                <li><a href="app-development.html">App Development</a></li>
+                <li><a href="search-engine-optimization.html">Search Engine Optimization</a></li>
+                <li><a href="ppc-management.html">PPC Management</a></li>
+                <li><a href="social-media.html">Social Media Marketing</a></li>
+              </ul>
+              </li>
+              <li class="dropdown nav-link scrollto"><a href="content-marketing.html">offline services</a>
+<ul>
+  <li><a href="index-2.html">SEO Agency</a></li>
               <li><a href="index-3.html">Marketing Company</a></li>
               <li><a href="index-4.html">Digital Marketing</a></li>
               <li><a href="index-5.html">SEO Company</a></li>
               <li><a href="index-6.html">Business SEO</a></li>
               <li><a href="index-7.html">SaaS Home</a></li>
               <li><a href="index-8.html">SEO Consultant</a></li>
-            </ul>
-          </li>
-          <li class="dropdown nav-link scrollto"><a href="#Services" onClick="scrollToService()"><span>Services</span><i
-                class="fa-solid fa-angle-down"></i></a>
-            <ul>
-              <li><a href="content-marketing.html">Content Marketing</a></li>
-              <li><a href="app-development.html">App Development</a></li>
-              <li><a href="search-engine-optimization.html">Search Engine Optimization</a></li>
-              <li><a href="ppc-management.html">PPC Management</a></li>
-              <li><a href="social-media.html">Social Media Marketing</a></li>
+</ul>
+              </li>
             </ul>
           </li>
 
@@ -172,7 +186,14 @@
 
         </ul>
         <!-- <i class="fa-solid fa-bars mobile-nav-toggle m-3"></i> -->
-
+        <ul>
+            <a style="color: #fff; font-size: medium;" class="mx-3">Follow us on <i class="fa-solid fa-arrow-right"></i></a>
+              <div class=" d-flex justify-content-center align-items-center" style="color: #fff; font-size: large;">
+              <i class="fa-brands fa-instagram mx-3"></i>
+              <i class="fa-brands fa-facebook mx-3"></i>
+              <i class="fa-brands fa-linkedin-in mx-3"></i>
+            </div>
+        </ul>
 
       </nav><!-- .navbar -->
     </div>
@@ -185,7 +206,7 @@
     <div class="container landing">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center my-3 main-text">
-          <h1 data-aos="fade-up" style="z-index: 20; font-weight: bolder; font-size: 4rem;">We offer <span>modern solutions</span> to
+          <h1 data-aos="fade-up" style="z-index: 20; font-weight: bolder; font-size: 4rem;    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  ">We offer <span>modern solutions</span> to
             grow your business</h1>
           <h2 data-aos="fade-up" data-aos-delay="400" class="d-flex justify-content-center">We connect to build you
           </h2>
@@ -270,12 +291,13 @@
       <!-- <div class="service-container "> -->
         <div class="swiper mySwiper slider">
           <div class="swiper-wrapper">
+
             <div class="swiper-slide">
               <div class="service4 " data-aos="fade-left">
-                <img src="trads.jfif" width="200" height="320" alt="">
+                <img src="digital-marketing.jpg" width="200" height="320" alt="">
                 <div class="srev-item d-flex flex-column justify-content-center align-content-center">
                   <div class="d-flex flex-row">
-                    <h2 class="w-100">SEO</h2>
+                    <h2 class="w-100">Digital Marketing</h2>
                     <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
                   </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
@@ -283,12 +305,13 @@
                 </div>
               </div>
             </div>
+
             <div class="swiper-slide">
               <div class="service2 " data-aos="fade-left">
-                <img src="dm.jpg" width="200" height="320" alt="">
+                <img src="graphic de.jpg" width="200" height="320" alt="">
                 <div class="srev-item d-flex flex-column justify-content-center align-content-center">
                   <div class="d-flex flex-row">
-                    <h2 class="w-100">SEO</h2>
+                    <h2 class="w-100">Graphics Designing</h2>
                     <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
                   </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
@@ -313,10 +336,10 @@
   
             <div class="swiper-slide">
               <div class="service4 " data-aos="fade-left">
-                <img src="trads.jfif" width="200" height="320" alt="">
+                <img src="video_editing_.jpg" width="200" height="320" alt="">
                 <div class="srev-item d-flex flex-column justify-content-center align-content-center">
                   <div class="d-flex flex-row">
-                    <h2 class="w-100">SEO</h2>
+                    <h2 class="w-100">Video Editing</h2>
                     <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
                   </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
@@ -327,10 +350,10 @@
   
             <div class="swiper-slide">
               <div class="service5 " data-aos="fade-right">
-                <img src="seo.jfif" width="200" height="320" alt="">
+                <img src="WEB -Design-.jpg" width="200" height="320" alt="">
                 <div class="srev-item d-flex flex-column justify-content-center align-content-center">
                   <div class="d-flex flex-row">
-                    <h2 class="w-100">SEO</h2>
+                    <h2 class="w-100">Website Disigning</h2>
                     <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
                   </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
@@ -341,10 +364,10 @@
   
             <div class="swiper-slide">
               <div class="service6 " data-aos="fade-left">
-                <img src="trads.jfif" width="200" height="320" alt="">
+                <img src="influencer marketing.jpg" width="200" height="320" alt="">
                 <div class="srev-item d-flex flex-column justify-content-center align-content-center">
                   <div class="d-flex flex-row">
-                    <h2 class="w-100">SEO</h2>
+                    <h2 class="w-100">Influencer Marketing</h2>
                     <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
                   </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
@@ -355,10 +378,10 @@
   
             <div class="swiper-slide">
               <div class="service7 " data-aos="fade-right">
-                <img src="seo.jfif" width="200" height="320" alt="">
+                <img src="Auto branding.jpeg" width="200" height="320" alt="">
                 <div class="srev-item d-flex flex-column justify-content-center align-content-center">
                   <div class="d-flex flex-row">
-                    <h2 class="w-100">SEO</h2>
+                    <h2 class="w-100">Unique Branding Strategies</h2>
                     <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
                   </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
@@ -367,19 +390,6 @@
               </div>
             </div>
   
-            <div class="swiper-slide">
-              <div class="service8 " data-aos="fade-left">
-                <img src="trads.jfif" width="200" height="320" alt="">
-                <div class="srev-item d-flex flex-column justify-content-center align-content-center">
-                  <div class="d-flex flex-row">
-                    <h2 class="w-100">SEO</h2>
-                    <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
-                    corporis commodi!</p>
-                </div>
-              </div>
-            </div>
   
           </div>
   
@@ -493,28 +503,27 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="service3" data-aos="fade-right">
-              <img src="ppc.jpg" width="200" height="320" alt="">
+              <img src="Newspaper ADS.jpg" width="200" height="320" alt="">
               <div class="srev-item d-flex flex-column justify-content-center align-content-center">
                 <div class="d-flex flex-row">
-                  <h2 class="w-100">SEO</h2>
-                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                  <h2 class="w-100">Newspapers</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
-                  corporis commodi!</p>
+                <p> HT Hindi and English, Times of India, Indian express, Dainik Bhaskar, Dainik Jagran etc
+                </p>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="service2 " data-aos="fade-left">
-              <img src="dm.jpg" width="200" height="320" alt="">
+              <img src="radio-advertising.webp" width="200" height="320" alt="">
               <div class="srev-item d-flex flex-column justify-content-center align-content-center">
                 <div class="d-flex flex-row">
-                  <h2 class="w-100">SEO</h2>
-                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                  <h2 class="w-100">Radio</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
-                  corporis commodi!</p>
+                <p> RED FM, BIG FM,AKASHVANI, VIVIDH BHARATI, RADIO MIRCHI etc</p>
               </div>
             </div>
           </div>
@@ -535,11 +544,11 @@
 
           <div class="swiper-slide">
             <div class="service4 " data-aos="fade-left">
-              <img src="trads.jfif" width="200" height="320" alt="">
+              <img src="Hoarding and flexes.jpeg" width="200" height="320" alt="">
               <div class="srev-item d-flex flex-column justify-content-center align-content-center">
                 <div class="d-flex flex-row">
-                  <h2 class="w-100">SEO</h2>
-                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                  <h2 class="w-100"> Hoarding and Flexes</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
                   corporis commodi!</p>
@@ -549,11 +558,11 @@
 
           <div class="swiper-slide">
             <div class="service5 " data-aos="fade-right">
-              <img src="seo.jfif" width="200" height="320" alt="">
+              <img src="banner.jpg" width="200" height="320" alt="">
               <div class="srev-item d-flex flex-column justify-content-center align-content-center">
                 <div class="d-flex flex-row">
-                  <h2 class="w-100">SEO</h2>
-                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                  <h2 class="w-100">Banners</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
                   corporis commodi!</p>
@@ -563,11 +572,11 @@
 
           <div class="swiper-slide">
             <div class="service6 " data-aos="fade-left">
-              <img src="trads.jfif" width="200" height="320" alt="">
+              <img src="pamphlet_design_front.webp" width="200" height="320" alt="">
               <div class="srev-item d-flex flex-column justify-content-center align-content-center">
                 <div class="d-flex flex-row">
-                  <h2 class="w-100">SEO</h2>
-                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                  <h2 class="w-100">Pamphlets</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
                   corporis commodi!</p>
@@ -577,11 +586,11 @@
 
           <div class="swiper-slide">
             <div class="service7 " data-aos="fade-right">
-              <img src="seo.jfif" width="200" height="320" alt="">
+              <img src="Auto branding.jpeg" width="200" height="320" alt="">
               <div class="srev-item d-flex flex-column justify-content-center align-content-center">
                 <div class="d-flex flex-row">
-                  <h2 class="w-100">SEO</h2>
-                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                  <h2 class="w-100">Auto rickshaw Branding</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
                   corporis commodi!</p>
@@ -591,11 +600,11 @@
 
           <div class="swiper-slide">
             <div class="service8 " data-aos="fade-left">
-              <img src="trads.jfif" width="200" height="320" alt="">
+              <img src="PVR-Screen-770x433.webp" width="200" height="320" alt="">
               <div class="srev-item d-flex flex-column justify-content-center align-content-center">
                 <div class="d-flex flex-row">
-                  <h2 class="w-100">SEO</h2>
-                  <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i>
+                  <h2 class="w-100">PVR</h2>
+                  <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
                   corporis commodi!</p>
@@ -616,6 +625,244 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 
+  
+  <!-- ======= service-mobile Section ======= -->
+  <section id="service-mob" class="service-mob" style=" background-size: cover;">
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>What we offer ?</h2>
+        <p><span>Online</span> Services</p>
+      </header>
+
+          <div class="swiper mySwiper slider">
+            <div class="swiper-wrapper gy-4">
+
+              <div class="swiper-slide">
+                <div class="service3" data-aos="fade-right">
+                  <img src="ppc.jpg" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="service2 " data-aos="fade-left">
+                  <img src="dm.jpg" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+    
+        
+              <div class="swiper-slide">
+                <div class="service4 " data-aos="fade-left">
+                  <img src="trads.jfif" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="service5 " data-aos="fade-right">
+                  <img src="seo.jfif" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="service6 " data-aos="fade-left">
+                  <img src="trads.jfif" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="service7 " data-aos="fade-right">
+                  <img src="seo.jfif" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="service8 " data-aos="fade-left">
+                  <img src="trads.jfif" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              </div>
+
+  
+          </div>
+
+<br><br><br>
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+  
+        <p><span>Offline</span> Services</p>
+      </header>
+
+          <div class="swiper mySwiper slider">
+            <div class="swiper-wrapper gy-4">
+
+              <div class="swiper-slide">
+                <div class="service3" data-aos="fade-right">
+                  <img src="ppc.jpg" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="service2 " data-aos="fade-left">
+                  <img src="dm.jpg" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+    
+        
+              <div class="swiper-slide">
+                <div class="service4 " data-aos="fade-left">
+                  <img src="trads.jfif" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="service5 " data-aos="fade-right">
+                  <img src="seo.jfif" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="service6 " data-aos="fade-left">
+                  <img src="trads.jfif" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="service7 " data-aos="fade-right">
+                  <img src="seo.jfif" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="service8 " data-aos="fade-left">
+                  <img src="trads.jfif" width="200" height="320" alt="">
+                  <div class="srev-item d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-row">
+                      <h2 class="w-100">SEO</h2>
+                      <i class="fa-solid fa-quote-right" style="color: white; font-size: medium;"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam earum blanditiis id dignissimos
+                      corporis commodi!</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              </div>
+
+  
+          </div>
+
+  </section>
+  <!-- End Service-mobile Section -->
+
+
 
   <!-- /////////////////pricing section starts///////////////// -->
 
@@ -624,7 +871,7 @@
 
       <header class="section-header">
         <h2>Get Price</h2>
-        <p>Check our <span>Pricing</span></p>
+        <p>Our <span>Package</span></p>
       </header>
 
       <table class="tab">
@@ -652,7 +899,7 @@
             </div>
           </th>
         </tr>
-        <tr class="r1">
+        <tr class="r1 mx-4">
           <td>
             <p>Graphic Designs including reels</p>
           </td>
@@ -671,7 +918,7 @@
           </td>
 
         </tr>
-        <tr class="r2">
+        <tr class="r2 mx-4">
           <td>
             <p>Setting ads campaign</p>
           </td>
@@ -688,7 +935,7 @@
           </td>
 
         </tr>
-        <tr class="r3">
+        <tr class="r3 mx-4">
           <td>
             <p>Social media handeling</p>
           </td>
@@ -706,7 +953,7 @@
           </td>
 
         </tr>
-        <tr class="r3">
+        <tr class="r3 mx-4">
           <td>
             <p>google reviews</p>
           </td>
@@ -724,7 +971,7 @@
           </td>
 
         </tr>
-        <tr class="r1">
+        <tr class="r1 mx-4">
           <td>
             <p>Articles on free and paid platforms</p>
           </td>
@@ -742,7 +989,7 @@
           </td>
 
         </tr>
-        <tr class="r2">
+        <tr class="r2 mx-4">
           <td>
             <p>Photos and video shoots</p>
           </td>
@@ -761,7 +1008,7 @@
           </td>
 
         </tr>
-        <tr class="r1">
+        <tr class="r1 mx-4">
           <td>
             <p>bot master tool for whatsapp marketing</p>
           </td>
@@ -779,7 +1026,7 @@
           </td>
 
         </tr>
-        <tr class="r2">
+        <tr class="r mx-42">
           <td>
             <p>SEO (serch ingene optimisation) for Google my bussiness</p>
           </td>
@@ -797,7 +1044,7 @@
           </td>
 
         </tr>
-        <tr class="r3">
+        <tr class="r mx-43">
           <td>
             <p>SEO (serch ingene optimisation) for Website designing</p>
           </td>
@@ -815,7 +1062,7 @@
           </td>
 
         </tr>
-        <tr class="r4">
+        <tr class="r mx-44">
           <td>
             <p>Website optimisation</p>
           </td>
@@ -838,7 +1085,7 @@
       <div class="d-flex justify-content-around lower-blend">
         <div class="blend1" data-aos="fade-left">
           <a href="">
-            <h2 class="text-center text-uppercase">Get Price</h2>
+            <h2 class="text-center text-uppercase fw-bold">Get Price</h2>
           </a>
           <a href="">
             <h3 style="font-size: x-large; font-weight: bold; text-align: center;">BASIC</h3>
@@ -847,16 +1094,16 @@
             <h2 style=" font-size: 22px;
           text-align: center;
           font-weight: 800;
-          color: #ff008c;
+          color: #d547c08c;
           font-size: 30px;
           margin-bottom: 3px;"><span>Rs</span> 9k</h2>
             <a href="" class="d-flex justify-content-center"
-              style="border:1px solid #f61677; border-radius: 20px; font-weight: bold; background-color:rgba(249, 97, 221, 0.897);">BUY</a>
+              style="border:1px solid #e414c5; border-radius: 20px; font-weight: bold; background-color:#d547c08c;">BUY</a>
           </div>
         </div>
         <div class="blend2" data-aos="fade-up">
           <a href="">
-            <h2 class="text-center text-uppercase">Get Price</h2>
+            <h2 class="text-center text-uppercase fw-bold">Get Price</h2>
           </a>
           <a href="">
             <h3 style="font-size: x-large; font-weight: bold; text-align: center; ">STANDARD</h3>
@@ -865,16 +1112,16 @@
             <h2 style=" font-size: 22px;
           text-align: center;
           font-weight: 800;
-          color: #00ff7b;
+          color: #33c276d0;
           font-size: 30px;
           margin-bottom: 3px;"><span>Rs</span> 15k</h2>
             <a href="" class="d-flex justify-content-center"
-              style="border:1px solid #16c9f6; border-radius: 20px; font-weight: bold; background-color:rgba(25, 210, 124, 0.809);">BUY</a>
+              style="border:1px solid #16f68d; border-radius: 20px; font-weight: bold; background-color:#33c276d0;">BUY</a>
           </div>
         </div>
         <div class="blend3" data-aos="fade-left">
           <a href="">
-            <h2 class="text-center text-uppercase">Get Price</h2>
+            <h2 class="text-center text-uppercase fw-bold">Get Price</h2>
           </a>
           <a href="">
             <h3 style="font-size: x-large; font-weight: bold; text-align: center; ">PRO</h3>
@@ -883,12 +1130,12 @@
             <h2 style=" font-size: 22px;
           text-align: center;
           font-weight: 800;
-          color: #cdeb39;
+          color: #f59c0d98;
           font-size: 30px;
           margin-bottom: 3px;
           "><span>Rs</span> 20k</h2>
             <a href="" class="d-flex justify-content-center"
-              style="border:1px solid #f66416; border-radius: 20px; font-weight: bold; background-color:rgba(204, 247, 11, 0.945);">BUY</a>
+              style="border:1px solid #f66416; border-radius: 20px; font-weight: bold; background-color:#f59c0d98;">BUY</a>
           </div>
         </div>
 
@@ -920,15 +1167,15 @@
               <p>Monthly Package</p>
               <div class="details">
                 <ul>
-                  <li>1=> Graphic Designs including reels (15)</li>
+                  <li><a href=""> Graphic Designs including reels (15)</a></li>
                   <hr>
-                  <li>2=> Setting ads campaign</li>
+                  <li><a href="">Setting ads campaign</a></li>
                   <hr>
-                  <li>3=> Social media handeling</li>
+                  <li><a href="">Social media handeling</a></li>
                   <hr>
-                  <li>4=> google reviews</li>
+                  <li><a href="">google reviews</a></li>
                   <hr>
-                  <li>5=> Photos and video shoots (1 time in every two week)</li>
+                  <li><a href="">Photos and video shoots (1 time in every two week)</a></li>
             
                 </ul>
               </div>
@@ -946,21 +1193,21 @@
               <p>Monthly Package</p>
               <div class="details">
                 <ul>
-                  <li>1=> Graphic Designs including reels (15)</li>
+                  <li><a href=""> Graphic Designs including reels (15)</a></li>
                   <hr>
-                  <li>2=> Setting ads campaign</li>
+                  <li><a href="">Setting ads campaign</a></li>
                   <hr>
-                  <li>3=> Social media handeling</li>
+                  <li><a href="">Social media handeling</a></li>
                   <hr>
-                  <li>4=> google reviews</li>
+                  <li><a href="">google reviews</a></li>
                   <hr>
-                  <li>5=> Photos and video shoots (1 time in every two week)</li>
+                  <li><a href="">Photos and video shoots (1 time in every two week)</a></li>
                   <hr>
-                  <li>6=> SEO for Google My Bussiness</li>
+                  <li><a href=""> SEO for Google My Bussiness</a></li>
                   <hr>
-                  <li>7=> SEO for Website</li>
+                  <li><a href=""> SEO for Website</a></li>
                   <hr>
-                  <li>8=> Website optimisation</li>
+                  <li><a href=""> Website optimisation</a></li>
                 </ul>
               </div>
             </div>
@@ -977,25 +1224,25 @@
               <p>Monthly Package</p>
               <div class="details">
                 <ul>
-                  <li>1=> Graphic Designs including reels (20)</li>
+                  <li><a href=""> Graphic Designs including reels (15)</a></li>
                   <hr>
-                  <li>2=> Setting ads campaign</li>
+                  <li><a href="">Setting ads campaign</a></li>
                   <hr>
-                  <li>3=> Social media handeling</li>
+                  <li><a href="">Social media handeling</a></li>
                   <hr>
-                  <li>4=> google reviews</li>
+                  <li><a href="">google reviews</a></li>
                   <hr>
-                  <li>5=> Photos and video shoots (2 times weekly)</li>
+                  <li><a href="">Photos and video shoots (1 time in every two week)</a></li>
                   <hr>
-                  <li>6=> SEO for Google My Bussiness</li>
+                  <li><a href=""> SEO for Google My Bussiness</a></li>
                   <hr>
-                  <li>7=> SEO for Website</li>
+                  <li><a href=""> SEO for Website</a></li>
                   <hr>
-                  <li>8=> Website optimisation</li>
+                  <li><a href=""> Website optimisation</a></li>
                   <hr>
-                  <li>9=> Bot Master tool for whatsapp marketing</li>
+                  <li><a href="">Bot Master tool for whatsapp marketing</a></li>
                   <hr>
-                  <li>10=> Articles on free and paid platforms</li>
+                  <li><a href=""> Articles on free and paid platforms</a></li>
 
                 </ul>
               </div>
@@ -1120,7 +1367,7 @@
 
   <!-- ======= Counts Section ======= -->
   <!-- ======= Counts Section ======= -->
-  <section id="counts" class="counts ">
+  <!-- <section id="counts" class="counts ">
     <div class="container" data-aos="fade-up">
 
       <div class="row gy-4">
@@ -1172,7 +1419,7 @@
       </div>
 
     </div>
-  </section><!-- End Counts Section -->
+  </section>End Counts Section -->
 
 
 
@@ -1438,13 +1685,13 @@
 
 
 
-  <!-- ======= Team Section ======= -->
+  <!-- ======= our setisfied costumers Section ======= -->
   <section id="Team" class="team">
     <div class="container" data-aos="fade-up">
 
       <header class="section-header">
-        <h2>Team</h2>
-        <p>Our hard working team</p>
+        <h2>Clients</h2>
+        <p>Our <span>Satisfied</span> Clients</p>
       </header>
 
           <div class="swiper mySwiper slider2">
@@ -1456,9 +1703,9 @@
                     style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(34, 58, 192, 0.686) ; width: 500px;">
 
                     <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
-                      <img src="trads.jfif"
+                      <img src="LtColPS.jpeg"
                         style="border-radius: 50%; width: 70px; border: 5px solid rgba(34, 58, 192, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
-                      <h3>Nesciunt Mete</h3>
+                      <h3 style="text-transform: uppercase;">SUIT LENGTH WALA</h3>
                       <i class="fa-solid fa-quote-right"
                         style="font-size: 60px; color: rgba(34, 58, 192, 0.686) ;"></i>
                     </div>
@@ -1481,9 +1728,9 @@
                     style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(34, 58, 192, 0.686) ; width: 500px;">
 
                     <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
-                      <img src="trads.jfif"
+                      <img src="SLW.jpeg"
                         style="border-radius: 50%; width: 70px; border: 5px solid rgba(34, 58, 192, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
-                      <h3>Nesciunt Mete</h3>
+                      <h3 style="text-transform: uppercase;">SUIT LENGTH WALA</h3>
                       <i class="fa-solid fa-quote-right"
                         style="font-size: 60px; color: rgba(34, 58, 192, 0.686) ;"></i>
                     </div>
@@ -1506,9 +1753,9 @@
                     style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(34, 58, 192, 0.686) ; width: 500px;">
 
                     <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
-                      <img src="trads.jfif"
+                      <img src="SA.jpeg"
                         style="border-radius: 50%; width: 70px; border: 5px solid rgba(34, 58, 192, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
-                      <h3>Nesciunt Mete</h3>
+                      <h3 style="text-transform: uppercase;">Salon academy</h3>
                       <i class="fa-solid fa-quote-right"
                         style="font-size: 60px; color: rgba(34, 58, 192, 0.686) ;"></i>
                     </div>
@@ -1531,9 +1778,34 @@
                     style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(34, 58, 192, 0.686) ; width: 500px;">
 
                     <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
-                      <img src="trads.jfif"
+                      <img src="GH.jpeg"
                         style="border-radius: 50%; width: 70px; border: 5px solid rgba(34, 58, 192, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
-                      <h3>Nesciunt Mete</h3>
+                      <h3 style="text-transform: uppercase;">geneses hospital</h3>
+                      <i class="fa-solid fa-quote-right"
+                        style="font-size: 60px; color: rgba(34, 58, 192, 0.686) ;"></i>
+                    </div>
+                    <p style="font-family:Poppins;">"Provident nihil minus qui consequatur non omnis maiores. Eos
+                      accusantium
+                      minus dolores iure perferendis
+                      tempore et consequatur."</p>
+
+                    <div class="social"
+                      style="color: rgba(34, 58, 192, 0.686) ; display: flex; justify-content: left;margin-left: 50px;">
+                      <i class="fa-brands fa-facebook m-2"></i> <i class="fa-brands fa-instagram m-2"></i> <i
+                        class="fa-brands fa-linkedin-in m-2"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="height: auto;">
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="test-box"
+                    style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(34, 58, 192, 0.686) ; width: 500px;">
+
+                    <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
+                      <img src="MP.jpeg"
+                        style="border-radius: 50%; width: 70px; border: 5px solid rgba(34, 58, 192, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
+                      <h3 style="text-transform: uppercase;">magicpin</h3>
                       <i class="fa-solid fa-quote-right"
                         style="font-size: 60px; color: rgba(34, 58, 192, 0.686) ;"></i>
                     </div>
@@ -1558,9 +1830,9 @@
                     style="border-radius: 15px; box-shadow: 3px 18px 25px rgba(34, 58, 192, 0.686) ; width: 500px;">
 
                     <div class="sep d-flex justify-content-sm-around align-items-center flex-row p-2">
-                      <img src="trads.jfif"
+                      <img src="EW.jpeg"
                         style="border-radius: 50%; width: 70px; border: 5px solid rgba(34, 58, 192, 0.686) ;box-shadow:5px 3px 10px rgba(59, 59, 139, 0.732)  ; ">
-                      <h3>Nesciunt Mete</h3>
+                      <h3 style="text-transform: uppercase;">elmwood</h3>
                       <i class="fa-solid fa-quote-right"
                         style="font-size: 60px; color: rgba(34, 58, 192, 0.686) ;"></i>
                     </div>
@@ -1588,6 +1860,22 @@
   </section><!-- End Team Section -->
 
 
+  <section class="contact">
+    <div class="container">
+      <header class="section-header" data-aos="fade-up">
+        <h2>Get in touch</h2>
+        <p>Feel free to reach us</p>
+      </header>
+
+      <div class="btn-contact">
+        <a href="contact.html" class="box octf-btn d-flex
+        justify-content-center text-capitalize" data-aos="fade-up">
+          let's get in
+           <i class="fa-solid fa-arrow-right mx-2"></i>
+        </a>
+      </div>
+    </div>
+</section>
 
   <!-- ======= F.A.Q Section ======= -->
   <!-- End Contact Section -->
@@ -1605,11 +1893,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
-            <h4 style="color: #f61677; font-size: 24px;
+            <h4 style="color: #f61677 !important; font-size: 24px;
             margin: 0 0 10px 0;
             padding: 0;
             line-height: 1;
-            font-weight: 900;
+            font-weight: 700;
             color: #feffff;">Our Newsletter</h4>
             <p style="color: #fff;">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
           </div>
@@ -1793,6 +2081,7 @@
   </div>
 
 
+
   <!-- Vendor JS Files -->
 
 
@@ -1923,20 +2212,13 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      on: {
-        slideChangeTransitionEnd:function() {
-          addEventListener("resize", (event) => {});
-
-onresize = (event) => {};
-        }
-    }
 
     });
 
     const swiper2 = new Swiper('.slider2', {
       // Optional parameters
       slidesPerView: 'auto',
-      spaceBetween: 200,
+      spaceBetween: 190,
       direction: 'horizontal',
       loop: true,
 

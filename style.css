@@ -6,6 +6,7 @@
 :root {
     scroll-behavior: smooth;
   }
+
   
   a{
     color: rgb(255, 255, 255);
@@ -14,6 +15,7 @@
 .hero,.services, .about, .values, .contact, .faq, #Team, .portfolio, .features, .counts, .Testimonials, .pricing{
  background: #000000;
 }
+
 .abt{
   background: #15171c; 
 }
@@ -388,6 +390,7 @@
     color: #fff;
     margin-left: 30px;
   }
+  
 
   
 }
@@ -754,87 +757,107 @@
   .icons{
     margin-left: auto;
     visibility: visible;
-  }
-  .icons h5{
-    margin-top: 30px;
+    margin-top: 50px !important;
   }
   .fa-location-dot{
     font-size: large !important;
-    margin-top: 40px !important;
   }
   .navbar, .navbar ul{
     display: none;
-  }   
-  .slidebar{
-    position:fixed;
-    display: block;
-    left:-250px;
-    width: 250px;
-    height: 100%;
-    background: #042331;
-    transition: all .5s ease;
-    margin-top: -100px;
-    z-index: 999;
-    font-family: open-sans, inter;
+  }
+  
+  
+.slidebar{
+  position:fixed;
+  display: block;
+  left:-250px;
+  width: 250px;
+  height: 100%;
+  background: #000000;
+  transition: all .5s ease;
+  margin-top: -65px;
+  z-index: 999999;
 }
 
 .slidebar #head{
-    height: 30px;
-    font-size: 22px;
-    color: white;
-    text-align: center;
-    /* line-height: 70px; */
-    background: #063146;
-    user-select: none;
-    
+  height: 50px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  /* line-height: 50px; */
+  background: #181717;
+  user-select: none;
+  
+}
+.slidebar ul{
+list-style: none;
 }
 .slidebar ul a{
-    display: block;
-    height: 100%;
-    width: 100%;line-height: 65px;
-    font-size: 20px;
-    color: #fff;
+  display: block;
+  height: 100%;
+  width: 100%;line-height: 65px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-times{
+  visibility: visible;
+  z-index: 99999999 !important;
 }
 #check{
-    display: none;
+  display: none;
 }
 label #btn,label #cancel{
-    position: absolute;
-    cursor: pointer;
-    background: #042331;
-    border-radius: 3px;
+  position: absolute;
+  cursor: pointer;
+  background: #000000;
+  border-radius: 3px;
 }
 label #btn{
-    left: 40px;
-    top:25px;
-    font-size:15px;
-    color: #fff;
-    padding: 6px 12px;
-    transition: all .5s;
+  left: 40px;
+  top:25px;
+  font-size:15px;
+  color: #fff;
+  padding: 6px 12px;
+  transition: all .5s;
 }
 label #cancel{
-    left: -195px;
-    top:17px;
-    font-size: 30px;
-    color: #0a5275;
-    z-index: 1111;
-    transition: all .5s ease;
+  left: -195px;
+  top:17px;
+  font-size: 20px;
+  color: #ffffff;
+  z-index: 1111;
+  transition: all .5s ease;
 }
 #check:checked ~ .slidebar{
-    left: 0;
+  left: 0;
 }
 #check:checked ~ label #btn{
-    left: 250px;
-    opacity: 0;
-    pointer-events: none;
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
 
 }
 
 #check:checked ~ label #cancel{
-    left: 195px;
+  left: 195px;
 
 
 }
+
+}
+
+@media (max-width: 1366px) {
+  .icon-ul, .lt{
+    margin-top: 20px !important;
+  }
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
 
   }
   
@@ -1398,7 +1421,7 @@ label #cancel{
   
   .about{
     box-shadow: 0 0 68px 8px rgba(16, 11, 37, 0.227) inset;
-    background-image: url(blend.jpg);
+    /* background-image: url(blend.jpg); */
 
   }
   .about .content {
@@ -1716,12 +1739,16 @@ label #cancel{
   font-size: larger;
   color: rgb(220, 186, 14) !important;
 }
+
+.service-mob{
+  background: linear-gradient(rgba(33, 6, 64, 0.62), rgb(5, 5, 53)), url(v1069-016.jpg) !important;   
+}
    .services{
     width: 100vw;
     height: auto; 
     background: linear-gradient(rgba(33, 6, 64, 0.62), rgb(5, 5, 53)), url(v1069-016.jpg);   
     background-size: 100% 100%;
-    display: table;
+    /* display: table; */
     background-attachment: fixed;
     animation: animate 1s linear ;
    }
@@ -1740,6 +1767,7 @@ label #cancel{
    .service-container .service1::before, .service2::before, .service3::before, .service4::before, .service5::before, .service6::before, .service7::before, .service8::before{
     position: absolute;
     content: '';
+    font-size: large !important;
     width: 120%;
     height: 55%;
     top:20%;
@@ -1784,6 +1812,9 @@ label #cancel{
     font-weight: bolder !important;
    }
 
+
+
+
    @media (max-width:576) {
     html, body{
      margin: 0;
@@ -1802,6 +1833,7 @@ label #cancel{
   --------------------------------------------------------------*/
   
   .pricing{
+    background-attachment: fixed;
     height: auto;
     width: 100vw;
   }
@@ -1855,14 +1887,28 @@ label #cancel{
 
 @media (max-width:575px) {
   
-/*  
-  .services .section-header h2, p{
-    visibility: visible !important; 
-     color: #000 !important;
-    z-index: 99999999999999 !important;
-    display: initial  !important;
+  p{
+    color: #fff !important;
+  }
 
-} */
+  .services{
+    display: none !important;
+  }
+  .service-mob{
+    background-attachment: fixed !important;
+  }
+
+}
+@media (min-width:575px) {
+  
+
+  .service-mob{
+    display: none !important;
+  }
+}
+
+
+
 @media (max-width:768px) {
   .lower-suffix{
     margin-top: -20px;
@@ -1937,6 +1983,7 @@ label #cancel{
     .ot-pricing-table {
       position: relative;
       text-align: center;
+      font-weight: bold;
       padding: 30px 40px 0;
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
@@ -1958,7 +2005,7 @@ label #cancel{
       margin: 40px;
       color: white;
       box-shadow: 0 0 68px 8px rgba(49, 10, 225, 0.227) inset;
-  
+      margin-top: 60px;
       
     }
     
@@ -2899,6 +2946,9 @@ color: rgb(237, 37, 144) !important;
   .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #4154f1;
   }
+  .text-box .sep h3{
+    text-transform: uppercase !important;
+  }
   
   /*--------------------------------------------------------------
   # Clients
@@ -2928,6 +2978,7 @@ color: rgb(237, 37, 144) !important;
   .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #4154f1;
   }
+
   
   
   /*--------------------------------------------------------------
