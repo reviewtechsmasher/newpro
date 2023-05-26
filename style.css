@@ -32,7 +32,7 @@
   color: rgb(235, 19, 124);
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/* 
 @media (max-width:910px) {
   #pricing{
     display: none !important;
@@ -43,8 +43,13 @@
   #pricing2{
     display: none !important;
   }
-}
+} */
+@media (max-width:768px) {
+#price-cont, .tab{
 
+   row-gap:10px ;
+  }
+}
   /* #header{
     height: 100px;
     
@@ -223,15 +228,13 @@
     margin-top: 10px;
     text-align: center;
   }
-/* 
 
-  @media (max-width:991) {
-   .back, .back::before {
-      display: flex !important;
-      flex-direction: column !important;
-      height: auto;
+
+  @media (max-width:1199px) {
+   .back {
+     display: none !important;
     }
-  } */
+  }
 
 
 
@@ -290,6 +293,9 @@
       
     }
     .blend1, .blend2, .blend3{
+      width: 50px ;
+    }
+    .back .blend1 a h2, .back .blend a h2, .blend3{
       width: 50px ;
     }
     .section-header p {
@@ -672,6 +678,7 @@
   }
   .fa-times, .fa-bars{
     visibility: hidden;
+
   }
 .icons{
   visibility: hidden;
@@ -1084,11 +1091,13 @@ label #cancel{
   # Hero Section
   --------------------------------------------------------------*/
 
- 
+ .main-text{
+  margin-top: -300px !important;
+ }
   .hero {
     position: relative;
     width: 100vw;
-    max-height: 100vh;
+    max-height:100vh ;
     z-index:1;
     background: rgb(0, 0, 0);
     backdrop-filter: blur(30px);
@@ -1289,6 +1298,9 @@ label #cancel{
     
   }
   @media (max-width: 991px) {
+    .main-text{
+      margin-top: 10px !important;
+    }
     .icon-ul{
       width: 50%;
       margin-top: 20px !important;
@@ -1746,7 +1758,8 @@ label #cancel{
    .services{
     width: 100vw;
     height: auto; 
-    background: linear-gradient(rgba(33, 6, 64, 0.62), rgb(5, 5, 53)), url(v1069-016.jpg);   
+    background: linear-gradient(rgba(33, 6, 64, 0.125), rgba(1, 1, 28, 0.428)), url(v1069-016.jpg) 
+    ;   
     background-size: 100% 100%;
     /* display: table; */
     background-attachment: fixed;
@@ -1776,8 +1789,8 @@ label #cancel{
     /* position: relative; */
     border-radius: 5px;
     border: .5px solid rgba(255, 255, 255, 0.367);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
     box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
     /* z-index: 9999999999 !important; */
     background-size: cover;
@@ -1836,6 +1849,121 @@ label #cancel{
     background-attachment: fixed;
     height: auto;
     width: 100vw;
+  }
+
+  @media (max-width: 1199px) {
+    .price-cont .lower-blend{
+      display: block !important;
+      margin: 0 auto;
+      /* background-color: #fff; */
+      width: fit-content;
+    }
+    .price-cont .lower-blend .blend1, .price-cont .lower-blend .blend2, .price-cont .lower-blend .blend3{
+     width: 80vw !important;
+    }
+
+    
+  }
+  @media (max-width: 991px) {
+    .price-cont .lower-blend{
+      /* display: flex !important; */
+    }
+    .tab .lower-blend .blend1 a h3, .tab .lower-blend .blend2 a h3, .tab .lower-blend .blend3 a h3{
+    font-size: 10px !important;
+    }
+
+    
+  }
+  @media (max-width: 768px) {
+    .tab{
+      height: auto;
+      width: auto;
+      margin-left: -120px !important;
+      padding: 30px !important;
+    }
+  
+  }
+  @media (max-width: 575px) {
+    .tab{
+      padding: 30px !important;
+      margin-left: -60px !important;
+    }
+    .tab td{
+      padding: 30px !important;
+      margin-left: -130px !important;
+    }
+    .tab-head .blended1 h3, .tab-head .blended2 h3,.tab-head .blended3 h3{
+      font-size: 20px !important;
+    }
+    .price-cont .lower-blend{
+      margin-left: -30px !important;
+    }
+    
+  }
+  @media (max-width: 455px) {
+    .tab{
+      padding: 40px !important;
+      margin-left: -60px !important;
+    }
+    .tab td{
+      padding: 30px !important;
+      margin-left: -130px !important;
+    }
+    .tab-head .blended1 h3, .tab-head .blended2 h3,.tab-head .blended3 h3{
+      font-size: 15px !important;
+      margin-left: -50px;
+    }
+
+  .tab  td p{
+      font-size: small;
+    }
+    .price-cont .lower-blend{
+      margin-left: -50px !important;
+    }
+    
+  }
+  @media (max-width: 360px) {
+    .tab{
+      padding: 40px !important;
+      margin-left: -60px !important;
+    }
+    .tab td{
+      padding: 20px !important;
+      margin-left: -150px !important;
+    }
+    .tab-head .blended1 h3, .tab-head .blended2 h3,.tab-head .blended3 h3{
+      font-size: 15px !important;
+      margin-left: -50px;
+    }
+
+  .tab  td p{
+      font-size: small;
+    }
+    
+  }
+  @media (max-width: 320px) {
+    .tab{
+      padding: 35px !important;
+      margin-left: 10px !important;
+    }
+    .price-cont .lower-blend{
+      margin-left: 10px !important;
+    }
+    .tab td{
+      padding: 15px !important;
+      margin-left: -110px !important;
+    }
+    .tab-head .blended1 h3, .tab-head .blended2 h3,.tab-head .blended3 h3{
+      font-size: 13px !important;
+      margin-left: -50px;
+    }
+    .price-cont {
+      margin-left: -30px !important;
+    }
+
+  .tab  td p{
+      font-size: small;
+    }
   }
   td{
     height: 100px;
@@ -2948,6 +3076,9 @@ color: rgb(237, 37, 144) !important;
   }
   .text-box .sep h3{
     text-transform: uppercase !important;
+  }
+  .test-box .social .brands{
+    color: #fff !important;
   }
   
   /*--------------------------------------------------------------
