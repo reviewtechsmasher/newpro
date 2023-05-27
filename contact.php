@@ -15,7 +15,7 @@
     mail($recipient, $subject, $message, $mail_head)
     or die('Error!')
     
-    echo """
+    echo '''
 
 
 
@@ -307,7 +307,7 @@
         <div class="btn-contact">
           <a target="_blank" href="about.html" class="box octf-btn d-flex
           justify-content-center text-capitalize" data-aos="fade-up">
-            let's get in
+            lets get in
             <i class="fa-solid fa-arrow-right mx-2"></i>
           </a>
         </div>
@@ -411,7 +411,7 @@
               font-weight: 700;
               letter-spacing: 1px;
               color: #ffffff;
-              font-family: 'Nunito', sans-serif;
+              font-family: "Nunito", sans-serif;
               margin-top: 3px;"></span>
               <img src="lt.PNG" style="  max-height: 40px;
               margin-right: 6px;" alt="">
@@ -421,7 +421,7 @@
             line-height: 24px;
             margin-bottom: 0;
             color: #fff;
-            font-family: 'Nunito', sans-serif;">
+            font-family: "Nunito", sans-serif;">
 "Connect with us for the latest updates, industry insights, and exciting opportunities. Together, let's shape the future of media with Cloud Flix Media and Mr. Surjeet Pradhan. Follow us on social media and visit our website to stay in the loop. Join the revolution today!"</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
@@ -513,5 +513,5 @@
 
 
 
-    """;
+    ''';
 ?>
