@@ -1960,7 +1960,7 @@ label #cancel{
     }
     
   }
-  @media (max-width: 375px) {
+  @media (max-width: 390px) {
     .tab{
       padding: 40px !important;
       margin-left: -60px !important;
@@ -2101,10 +2101,14 @@ label #cancel{
     margin-top: -20px;
   }
 
-  /* .logo{
-    margin-top: 20px !important;
-  } */
 }
+/* @media (max-width:2560px) {
+  .main-text{
+    font-size: 180px !important;
+  }
+  } */
+
+
 
 
 
