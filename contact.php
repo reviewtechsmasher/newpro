@@ -1,5 +1,4 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
@@ -16,8 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     mail($recipient, $subject, $message, $mail_head)
     or die('Error!')
     
-    echo '
-
+    echo """
 
 
 
@@ -515,5 +513,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-    ';
+    """;
 ?>
