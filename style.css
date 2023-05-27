@@ -1960,7 +1960,7 @@ label #cancel{
     }
     
   }
-  @media (max-width: 360px) {
+  @media (max-width: 375px) {
     .tab{
       padding: 40px !important;
       margin-left: -60px !important;
