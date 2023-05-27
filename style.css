@@ -1960,7 +1960,7 @@ label #cancel{
     }
     
   }
-  @media (max-width: 390px) {
+  @media (max-width: 400px) {
     .tab{
       padding: 40px !important;
       margin-left: -60px !important;
@@ -1979,7 +1979,7 @@ label #cancel{
     }
     
   }
-  @media (max-width: 320px) {
+  @media (max-width: 360px) {
     .tab{
       padding: 35px !important;
       margin-left: 10px !important;
@@ -1989,6 +1989,30 @@ label #cancel{
     }
     .tab td{
       padding: 15px !important;
+      margin-left: -110px !important;
+    }
+    .tab-head .blended1 h3, .tab-head .blended2 h3,.tab-head .blended3 h3{
+      font-size: 13px !important;
+      margin-left: -50px;
+    }
+    .price-cont {
+      margin-left: -30px !important;
+    }
+
+  .tab  td p{
+      font-size: small;
+    }
+  }
+  @media (max-width: 290px) {
+    .tab{
+      padding: 15px !important;
+      margin-left: 10px !important;
+    }
+    .price-cont .lower-blend{
+      margin-left: 10px !important;
+    }
+    .tab td{
+      padding: 10px !important;
       margin-left: -110px !important;
     }
     .tab-head .blended1 h3, .tab-head .blended2 h3,.tab-head .blended3 h3{
