@@ -1,7 +1,7 @@
 <?php
-  $to = 'akhilmuduli1@gmail.com'
+  $to = 'cloudflixmedia@gmail.com'
   $subject = 'text mail'
-  $message = 'hello i am akhil'
+  $message = 'hello i am akhil this is a test message'
   $From = 'akhilmuduli5@gmail.com'
   $headers = 'From : $From'
 
