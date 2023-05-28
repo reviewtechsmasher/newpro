@@ -3371,6 +3371,7 @@ color: rgb(237, 37, 144) !important;
     border-bottom: 1px solid rgb(109, 106, 106);
     background: transparent;
     outline: none;
+    color: #fff;
   }
   
   .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
@@ -3381,6 +3382,7 @@ color: rgb(237, 37, 144) !important;
   .contact .php-email-form input {
     padding: 10px 15px;
     background-color: transparent !important;
+    color: #fff;
   }
   
   .contact .php-email-form textarea {
