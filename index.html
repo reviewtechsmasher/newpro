@@ -86,6 +86,8 @@
         <!-- <span><p class="c">Cloud</p></span><span><p class="f">Flix</p></span><span><p class="m"> Media</p></span> -->
       </a>
 
+
+
       <ul class="icon-ul">
         <li><a class="getstarted scrollto" href="contact.html" onClick="scrollToContact()">Contact us</a></li>
         <div class="d-flex justify-content-center mx-4">
@@ -2180,6 +2182,35 @@
 
 
   </footer>
+
+  <style>
+    #mybtn2{
+	/* display: none; */
+	position: fixed;
+	border-radius: 50px;
+	bottom: 70px;
+	right: 30px;
+	z-index: 999999999999999999;
+	border: none;
+	color: #ffffff;
+  animation: anima .3s linear infinite;
+	/* background: rgb(32, 201, 83); */
+}
+
+@keyframes anima {
+  0%{
+    margin-top: 0;
+  }
+  100%{
+    margin-top: -20px;
+  }
+}
+  </style>
+  <div class="whatsapp float-end">
+    <a href="https://wa.me/8917532478?text=hii.." target="_blank">
+      <img src="Whatsapp.png" data-aos="fade-up" width="60" id="mybtn2" alt="">
+    </a>
+  </div>
 
   <div class="scrolltop float-right">
     <a href="#"><i class="fa fa-arrow-up" onClick="scrollTop()" id="mybtn"></i></a>
