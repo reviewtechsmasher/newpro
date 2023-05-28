@@ -1524,6 +1524,73 @@ label #cancel{
   }
 
   
+
+  /* reading doccuments of website */
+
+  
+  .read {
+    height: auto;
+    box-shadow: 0 0 68px 8px rgba(16, 11, 37, 0.227) inset;
+    background-image: url(black\ bg.webp);
+    /* position: relative; */
+    z-index: 99999 !important;
+  }
+  .read{
+    box-shadow: 0 0 68px 8px rgba(16, 11, 37, 0.227) inset;
+    /* background-image: url(blend.jpg); */
+
+  }
+  .read .content {
+    background-color: #f6f9ff;
+    padding: 40px;
+  }
+  
+  .read h2 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4154f1;
+    text-transform: uppercase;
+  }
+  
+  .read h3 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #ffff;
+  }
+  
+  .read p {
+    margin: 15px 0 30px 0;
+    line-height: 24px;
+    color: #fff;
+  }
+  
+  .read .btn-read-more {
+    line-height: 0;
+    padding: 15px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background:#15171c;;    box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+  }
+  
+  .read .btn-read-more span {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  
+  .read .btn-read-more i {
+    margin-left: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  
+  .read .btn-read-more:hover i {
+    transform: translateX(9px);
+  }
+
+  
   
   /*--------------------------------------------------------------
   # Values
@@ -3302,6 +3369,7 @@ color: rgb(237, 37, 144) !important;
   
   .contact .php-email-form input {
     padding: 10px 15px;
+    background-color: transparent !important;
   }
   
   .contact .php-email-form textarea {
@@ -3326,7 +3394,6 @@ color: rgb(237, 37, 144) !important;
   
   .contact .php-email-form button[type="submit"]:hover {
     box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
-    /* background-image: linear-gradient(to right top, #4226c9, #363dd3, #2a50db, #2261e2, #2370e7, #2670e8, #2871ea, #2b71eb, #3262e8, #3f51e2, #4e3cdb, #5d1fd1); */
   }
   
   @-webkit-keyframes animate-loading {
@@ -3382,71 +3449,7 @@ color: rgb(237, 37, 144) !important;
   background-size: cover;
 }
 
-.ball-box2{
-  position: absolute;
-  z-index: .1 !important;
-  top: 50%;
-}
 
-.ball-box2 .ball1{
-  height: 30px;
-  width: 30px;
-  background: linear-gradient(rgb(78, 12, 232), rgb(255, 128, 0)) !important;
-  transform: translate(230%, 10%);
-  border-radius: 50%;
-  z-index: initial !important;
-
-}
-
-.ball-box2 .ball2{
-
-  height: 90px;
-  width: 90px;
-  background: linear-gradient(rgb(173, 12, 232), rgb(21, 0, 255)) !important;
-  transform: translate(630%, -270%);
-  border-radius: 50%;
-
-}
- .ball-box2 .ball3{
-
-  height: 50px;
-  width: 50px;
-  background: linear-gradient( rgb(13, 180, 241), rgb(115, 22, 255)) !important;
-  transform: translate(700%, 10%);
-  border-radius: 50%;
-
-}
- .ball-box2 .ball4{
-
-  height: 70px;
-  width: 70px;
-  background: linear-gradient(rgb(78, 12, 232), rgb(0, 213, 255)) !important;
-  transform: translate(10%, 10%);
-  border-radius: 50%;
-
-}
-.ball-box2 .ball5{
-  height: 70px;
-  width: 70px;
-  background: linear-gradient(rgb(78, 12, 232), rgb(204, 255, 0)) !important;
-  transform: translate(300%, 10%);
-  border-radius: 50%;
-}
- .ball-box2 .ball6{
-  height:300px;
-  width: 300px;
-  background: linear-gradient(rgb(78, 12, 232), rgb(255, 128, 0)) !important;
-  transform: translate(-300%, -170%);
-  border-radius: 50%;
-  
-}
-.ball-box2 .ball7{
-  height:300px;
-  width: 300px;
-  background: linear-gradient(rgb(78, 12, 232), rgb(255, 128, 0)) !important;
-  transform: translate(150%, -170%);
-  border-radius: 50%;
-}
 
 /*   
   -------------------------------------------------------------
