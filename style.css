@@ -104,8 +104,8 @@
     font-family: "Nunito", sans-serif !important;
 
   } */
-  .container .section-header p, .swiper-slide h2{position: relative;}
-  .container .section-header p::after, .swiper-slide h2::after {
+  .container .section-header p{position: relative;}
+  .container .section-header p::after{
     position: absolute;
     content: "";
     width: 200px;
