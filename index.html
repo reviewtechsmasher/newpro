@@ -119,7 +119,7 @@
         <li><a href="index.html"><i class="fa-solid fa-house" style="font-size: small; padding:0 15px;"></i>Home</a></li>
         <li class="dropdown nav-link scrollto"><a href="#services"><i class="fa-solid fa-wand-magic-sparkles" style="font-size: small; padding:0 15px;"></i>Services</a>
           <ul>
-            <li class="dropdown nav-link scrollto"><a href="#services"><i class="fa-solid fa-earth-americas" style="font-size: small; padding:0 15px;"></i>online services</a>
+            <li class="dropdown nav-link scrollto" Onclick="scrollToServiceMOB"><a href="#services-mob"><i class="fa-solid fa-earth-americas" style="font-size: small; padding:0 15px;"></i>online services</a>
               <ul>
                 <li><a href="content-marketing.html">Digital Marketing</a></li>
                 <li><a href="search-engine-optimization.html">Business SEO</a></li>
@@ -129,7 +129,7 @@
                 <li><a href="social-media.html">Influencer marketing</a></li>
               </ul>
             </li>
-            <li class="dropdown nav-link scrollto"><a href="#services"> <i class="fa-solid fa-user-robot-xmarks" style="font-size: small; padding:0 15px;"></i>offline services</a>
+            <li class="dropdown nav-link scrollto" Onclick="scrollToServiceMOB"><a href="#service-mob"> <i class="fa-solid fa-user-robot-xmarks" style="font-size: small; padding:0 15px;"></i>offline services</a>
               <ul>
                 <li><a href="index-2.html">Newspapers Ads</a></li>
                 <li><a href="index-3.html">Banners</a></li>
@@ -199,7 +199,7 @@
           <li class="dropdown nav-link scrollto"><a href="#services" onClick="scrollToService()"><span>Services</span><i
                 class="fa-solid fa-angle-down"></i></a>
             <ul>
-              <li class="dropdown nav-link scrollto"><a href="content-marketing.html">online services</a>
+              <li class="dropdown nav-link scrollto" onClick="scrollToService()"><a href="content-marketing.html">online services</a>
                 <ul>
                   <li><a href="content-marketing.html">Digital Marketing</a></li>
                   <li><a href="search-engine-optimization.html">Business SEO</a></li>
@@ -209,7 +209,7 @@
                   <li><a href="social-media.html">Influencer marketing</a></li>
                 </ul>
               </li>
-              <li class="dropdown nav-link scrollto"><a href="content-marketing.html">offline services</a>
+              <li class="dropdown nav-link scrollto" onClick="scrollToService()"><a href="content-marketing.html">offline services</a>
                 <ul>
                   <li><a href="index-2.html">Newspapers-advertising</a></li>
                   <li><a href="index-3.html">Banners</a></li>
@@ -251,7 +251,7 @@
 
                 </ul>
               </li>
-              <li class="dropdown nav-link scrollto"><a href="portfolio-grid.html">Standard</a>
+              <li class="dropdown nav-link scrollto" onClick="scrollToService()"><a href="portfolio-grid.html">Standard</a>
                 <ul>
                   <li><a href="">15 Graphic Designs</a></li>
                   <li><a href="">Setting Ads Campaign</a></li>
@@ -264,7 +264,7 @@
 
                 </ul>
               </li>
-              <li class="dropdown nav-link scrollto"><a href="portfolio-grid-2.html">Premium</a>
+              <li class="dropdown nav-link scrollto" onClick="scrollToService()"><a href="portfolio-grid-2.html">Premium</a>
                 <ul>
                   <li><a href="">20 Graphic Designs</a></li>
                   <li><a href="">Setting Ads Campaign</a></li>
@@ -845,7 +845,7 @@
                   <h2 class="w-100" style="font-size: larger !important; font-weight: bolder !important;">Unique Branding Strategies</h2>
                   <!-- <i class="fa-solid fa-quote-right" style="color: white; font-size: small;"></i> -->
                 </div>
-                <p>: Our team excels at developing creative and impactful branding strategies that make your brand stand out from the competition.</p>
+                <p> Our team excels at developing creative and impactful branding strategies that make your brand stand out from the competition.</p>
               </div>
             </div>
           </div>
@@ -2278,9 +2278,14 @@
         scrollTop: $('#portfolio').offset().top
       }, 500);
     }
+    function scrollToServiceMOB() {
+      $('html, body').animate({
+        scrollTop: $('#service-mob').offset().top
+      }, 500);
+    }
     function scrollToService() {
       $('html, body').animate({
-        scrollTop: $('#services').offset().top
+        scrollTop: $('#service').offset().top
       }, 500);
     }
 
